@@ -4,12 +4,13 @@
 
 :root {
   --primary: #1a1a2e;
+  --navy: #0d1b4b;
   --accent: #e63946;
   --accent2: #457b9d;
   --bg: #ffffff;
   --bg2: #f8f9fa;
-  --text: #1a1a2e;
-  --muted: #6c757d;
+  --text: #333333;
+  --muted: #666666;
   --border: #e9ecef;
   --nav: 68px;
 }
@@ -30,30 +31,37 @@ a { text-decoration: none; color: inherit; }
   position: fixed;
   top: 0; left: 0; right: 0;
   height: var(--nav);
-  background: rgba(255,255,255,0.97);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
+  background: var(--navy);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 6%;
+  transition: background 0.3s, backdrop-filter 0.3s;
+}
+
+.navbar.scrolled {
+  background: rgba(13, 27, 75, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .nav-logo { display: flex; flex-direction: column; line-height: 1.15; }
-.nav-logo .main { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1rem; color: var(--primary); }
+.nav-logo .main { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1rem; color: #ffffff; }
 .nav-logo .sub  { font-size: 0.65rem; color: var(--accent); font-weight: 700; letter-spacing: 0.08em; }
 
 .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
 .nav-links a {
-  font-size: 0.85rem; font-weight: 500; color: var(--muted);
+  font-size: 0.85rem; font-weight: 500; color: rgba(255,255,255,0.75);
   position: relative; transition: color 0.2s;
 }
 .nav-links a::after {
   content: ''; position: absolute; bottom: -4px; left: 0;
-  width: 0; height: 2px; background: var(--accent); transition: width 0.2s;
+  width: 0; height: 2px; background: white; transition: width 0.2s;
 }
-.nav-links a:hover, .nav-links a.active { color: var(--primary); }
+.nav-links a:hover, .nav-links a.active { color: #ffffff; }
 .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
 
 .nav-cta {
@@ -72,28 +80,28 @@ a { text-decoration: none; color: inherit; }
   display: none; flex-direction: column; gap: 5px;
   cursor: pointer; background: none; border: none; padding: 4px;
 }
-.hamburger span { display: block; width: 24px; height: 2px; background: var(--primary); transition: all 0.3s; }
+.hamburger span { display: block; width: 24px; height: 2px; background: #ffffff; transition: all 0.3s; }
 
 .mobile-menu {
   display: none; position: fixed;
   top: var(--nav); left: 0; right: 0;
-  background: white; border-bottom: 1px solid var(--border);
+  background: var(--navy); border-bottom: 1px solid rgba(255,255,255,0.08);
   padding: 0.5rem 6%; flex-direction: column;
-  z-index: 999; box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  z-index: 999; box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 .mobile-menu.open { display: flex; }
 .mobile-menu a {
   padding: 0.85rem 0; font-size: 0.9rem; font-weight: 500;
-  border-bottom: 1px solid var(--border); color: var(--text);
+  border-bottom: 1px solid rgba(255,255,255,0.08); color: rgba(255,255,255,0.8);
 }
 .mobile-menu a:last-child { border-bottom: none; }
 
 /* ── Page wrapper ── */
-.page-wrap { padding-top: var(--nav); min-height: 100vh; }
+.page-wrap { padding-top: var(--nav); min-height: 100vh; background: #ffffff; }
 
-/* ── Page Hero (내부 페이지 상단) ── */
+/* ── Page Hero ── */
 .page-hero {
-  background: linear-gradient(135deg, var(--primary) 0%, #0f3460 100%);
+  background: linear-gradient(135deg, var(--navy) 0%, #0f3460 100%);
   padding: 4rem 6%;
   text-align: center;
   color: white;
@@ -110,11 +118,11 @@ a { text-decoration: none; color: inherit; }
 .page-hero p  { font-size: 1rem; color: rgba(255,255,255,0.65); }
 
 /* ── Section ── */
-.section { padding: 5rem 6%; }
+.section { padding: 5rem 6%; background: #ffffff; }
 .section.gray { background: var(--bg2); }
 
 .sec-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; color: var(--accent); text-transform: uppercase; margin-bottom: 0.5rem; }
-.sec-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 900; color: var(--primary); margin-bottom: 0.8rem; letter-spacing: -0.02em; }
+.sec-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 900; color: #222222; margin-bottom: 0.8rem; letter-spacing: -0.02em; }
 .sec-desc  { font-size: 0.95rem; color: var(--muted); line-height: 1.8; }
 
 /* ── Buttons ── */
@@ -129,12 +137,12 @@ a { text-decoration: none; color: inherit; }
 
 .btn-outline {
   display: inline-block;
-  background: transparent; color: var(--primary);
+  background: transparent; color: #333333;
   padding: 0.85rem 2rem; border-radius: 6px;
   font-weight: 600; font-size: 0.92rem;
   border: 2px solid var(--border); transition: all 0.2s;
 }
-.btn-outline:hover { border-color: var(--primary); transform: translateY(-2px); }
+.btn-outline:hover { border-color: #333333; transform: translateY(-2px); }
 
 /* ── Cards ── */
 .card {
@@ -147,7 +155,7 @@ a { text-decoration: none; color: inherit; }
   height: 3px; background: var(--accent);
   transform: scaleX(0); transition: transform 0.3s;
 }
-.card:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(0,0,0,0.1); border-color: transparent; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(0,0,0,0.08); border-color: transparent; }
 .card:hover::before { transform: scaleX(1); }
 
 /* ── Grid helpers ── */
@@ -161,7 +169,7 @@ a { text-decoration: none; color: inherit; }
 
 /* ── Footer ── */
 .footer {
-  background: var(--primary); color: rgba(255,255,255,0.65);
+  background: var(--navy); color: rgba(255,255,255,0.65);
   padding: 3.5rem 6%; text-align: center;
 }
 .footer .f-logo { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.1rem; color: white; margin-bottom: 0.3rem; }
