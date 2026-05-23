@@ -28,7 +28,7 @@ export default function Navbar() {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <Link href="/" className="nav-logo">
           <Image
-            src="/강의하는아이들.png"
+            src="/logo.png"
             alt="강의하는 아이들 과학전문학원"
             width={180}
             height={45}
