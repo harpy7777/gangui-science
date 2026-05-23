@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -26,8 +27,13 @@ export default function Navbar() {
     <>
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <Link href="/" className="nav-logo">
-          <span className="main">강의하는 아이들</span>
-          <span className="sub">서울 염창캠퍼스</span>
+          <Image
+            src="/강의하는아이들.png"
+            alt="강의하는 아이들 과학전문학원"
+            width={180}
+            height={45}
+            style={{ objectFit: 'contain' }}
+          />
         </Link>
         <ul className="nav-links">
           {links.map(l => (
