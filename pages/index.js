@@ -86,7 +86,7 @@ export default function Home() {
 
         {/* CTA Banner */}
         <section style={{
-          background: 'linear-gradient(135deg, #1a1a2e, #0f3460)',
+          background: '#ffffff',
           padding: '4rem 6%', textAlign: 'center', color: 'white'
         }}>
           <h2 style={{ fontSize: 'clamp(1.5rem,3vw,2rem)', fontWeight: 900, marginBottom: '1rem' }}>지금 바로 무료 상담 신청하세요</h2>
