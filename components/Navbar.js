@@ -43,7 +43,8 @@ export default function Navbar() {
             color: 'rgba(255,255,255,0.65)',
             letterSpacing: '0.28em',
             textTransform: 'uppercase',
-            whiteSpace: 'nowrap'
+            whiteSpace: 'nowrap',
+            marginLeft: '-1px'
           }}>
             Inspired Learning Science Academy
           </span>
