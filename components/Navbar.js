@@ -24,12 +24,12 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} style={{ padding: '0 2% 0 1%' }}>
-        <Link href="/" style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.2, textDecoration: 'none' }}>
+      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} style={{ padding: '0 2% 0 2%' }}>
+        <Link href="/" style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.2, textDecoration: 'none', marginRight: '2rem' }}>
           <span style={{
             fontFamily: "'Noto Sans KR', sans-serif",
             fontWeight: 700,
-            fontSize: '1.25rem',
+            fontSize: '1rem',
             color: 'white',
             letterSpacing: '-0.02em',
             whiteSpace: 'nowrap'
@@ -60,9 +60,7 @@ export default function Navbar() {
             <Link href="/contact" className="nav-cta">Contact Us</Link>
           </li>
         </ul>
-        <button className="hamburger" onClick={() => setOpen(!open)} aria-label="메뉴">
-          <span /><span /><span />
-        </button>
+        <div style={{ width: '2%' }} />
       </nav>
       <div className={`mobile-menu ${open ? 'open' : ''}`}>
         {links.map(l => (
