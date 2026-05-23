@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <>
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} style={{ padding: '0 32px' }}>
-        <Link href="/" style={{ display: 'flex', flexDirection: 'column', lineHeight: 1, textDecoration: 'none', marginRight: '2rem', gap: '0.35rem' }}>
+        <Link href="/" style={{ display: 'flex', flexDirection: 'column', lineHeight: 1, textDecoration: 'none', marginRight: 0, gap: '0.35rem' }}>
           <span style={{
             fontFamily: "'Noto Sans KR', sans-serif",
             fontWeight: 700,
