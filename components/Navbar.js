@@ -29,7 +29,7 @@ export default function Navbar() {
           <span style={{
             fontFamily: "'Noto Sans KR', sans-serif",
             fontWeight: 700,
-            fontSize: '1rem',
+            fontSize: '1.25rem',
             color: 'white',
             letterSpacing: '-0.02em',
             whiteSpace: 'nowrap'
@@ -38,10 +38,10 @@ export default function Navbar() {
           </span>
           <span style={{
             fontFamily: "'Montserrat', sans-serif",
-            fontWeight: 300,
-            fontSize: '0.58rem',
-            color: 'rgba(255,255,255,0.7)',
-            letterSpacing: '0.22em',
+            fontWeight: 200,
+            fontSize: '0.48rem',
+            color: 'rgba(255,255,255,0.65)',
+            letterSpacing: '0.28em',
             textTransform: 'uppercase',
             whiteSpace: 'nowrap'
           }}>
