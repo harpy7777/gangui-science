@@ -37,7 +37,7 @@ a { text-decoration: none; color: inherit; }
   display: flex;
   align-items: center;
   justify-content: space-between;
- padding: 0 24px;
+  padding: 0 32px;
   transition: background 0.3s, backdrop-filter 0.3s;
 }
 
@@ -73,6 +73,7 @@ a { text-decoration: none; color: inherit; }
   font-weight: 700 !important;
   font-size: 0.82rem !important;
   transition: background 0.2s !important;
+  white-space: nowrap;
 }
 .nav-cta:hover { background: #e0e0e0 !important; }
 .nav-cta::after { display: none !important; }
@@ -87,7 +88,7 @@ a { text-decoration: none; color: inherit; }
   display: none; position: fixed;
   top: var(--nav); left: 0; right: 0;
   background: #000000; border-bottom: 1px solid rgba(255,255,255,0.08);
-  padding: 0.5rem 6%; flex-direction: column;
+  padding: 0.5rem 32px; flex-direction: column;
   z-index: 999; box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 .mobile-menu.open { display: flex; }
