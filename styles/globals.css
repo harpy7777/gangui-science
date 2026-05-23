@@ -42,7 +42,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 .navbar.scrolled {
-  background: rgba(13, 27, 75, 0.82);
+  background: rgba(13, 27, 75, 0.65);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(255,255,255,0.1);
