@@ -1,9 +1,18 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+
 export default function Navbar() {
   const [open, setOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
   const router = useRouter()
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20)
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   const links = [
     { href: '/',          label: 'Home' },
     { href: '/about',     label: 'About Us' },
@@ -12,9 +21,10 @@ export default function Navbar() {
     { href: '/results',   label: 'Admission Results' },
     { href: '/notice',    label: 'Notice' },
   ]
+
   return (
     <>
-      <nav className="navbar">
+      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <Link href="/" className="nav-logo">
           <span className="main">강의하는 아이들</span>
           <span className="sub">서울 염창캠퍼스</span>
