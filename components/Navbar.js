@@ -24,8 +24,8 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} style={{ padding: '0 2% 0 2%' }}>
-        <Link href="/" style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.2, textDecoration: 'none', marginRight: '2rem' }}>
+      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} style={{ padding: '0 2% 0 3%' }}>
+        <Link href="/" style={{ display: 'flex', flexDirection: 'column', lineHeight: 1, textDecoration: 'none', marginRight: '2rem', gap: '0.35rem' }}>
           <span style={{
             fontFamily: "'Noto Sans KR', sans-serif",
             fontWeight: 700,
@@ -39,7 +39,7 @@ export default function Navbar() {
           <span style={{
             fontFamily: "'Montserrat', sans-serif",
             fontWeight: 200,
-            fontSize: '0.48rem',
+            fontSize: '0.42rem',
             color: 'rgba(255,255,255,0.65)',
             letterSpacing: '0.28em',
             textTransform: 'uppercase',
