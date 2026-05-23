@@ -52,9 +52,9 @@ a { text-decoration: none; color: inherit; }
 .nav-logo .main { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1rem; color: #ffffff; }
 .nav-logo .sub  { font-size: 0.65rem; color: var(--accent); font-weight: 700; letter-spacing: 0.08em; }
 
-.nav-links { display: flex; gap: 0; list-style: none; align-items: center; flex: 1; justify-content: flex-end; padding: 0; }
-.nav-links li { flex: 1; text-align: center; }
-.nav-links li:last-child { flex: none; padding-left: 1.5rem; }
+.nav-links { display: flex; list-style: none; align-items: center; flex: 1; justify-content: flex-end; padding: 0; gap: 2.5rem; }
+.nav-links li { flex: none; }
+.nav-links li:last-child { margin-left: 1.5rem; }
 .nav-links a {
   font-size: 0.85rem; font-weight: 500; color: rgba(255,255,255,0.75);
   position: relative; transition: color 0.2s;
