@@ -30,8 +30,8 @@ export default function Navbar() {
           <Image
            src="/icon2-1.png"
             alt="강의하는 아이들 과학전문학원"
-            width={180}
-            height={45}
+           width={220}
+height={55}
             style={{ objectFit: 'contain' }}
           />
         </Link>
