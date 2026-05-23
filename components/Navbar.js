@@ -56,7 +56,7 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
-          <li>
+          <li style={{ marginLeft: '0.5rem' }}>
             <Link href="/contact" className="nav-cta">Contact Us</Link>
           </li>
         </ul>
