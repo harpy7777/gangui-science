@@ -31,7 +31,7 @@ a { text-decoration: none; color: inherit; }
   position: fixed;
   top: 0; left: 0; right: 0;
   height: var(--nav);
-  background: var(--navy);
+  background: rgba(0, 0, 0, 0.95);
   border-bottom: 1px solid rgba(255,255,255,0.08);
   z-index: 1000;
   display: flex;
@@ -42,7 +42,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 .navbar.scrolled {
-  background: rgba(13, 27, 75, 0.65);
+  background: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -66,15 +66,15 @@ a { text-decoration: none; color: inherit; }
 .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
 
 .nav-cta {
-  background: var(--accent) !important;
-  color: white !important;
+  background: white !important;
+  color: black !important;
   padding: 0.45rem 1.1rem;
   border-radius: 5px;
   font-weight: 700 !important;
   font-size: 0.82rem !important;
   transition: background 0.2s !important;
 }
-.nav-cta:hover { background: #c1121f !important; }
+.nav-cta:hover { background: #e0e0e0 !important; }
 .nav-cta::after { display: none !important; }
 
 .hamburger {
@@ -86,7 +86,7 @@ a { text-decoration: none; color: inherit; }
 .mobile-menu {
   display: none; position: fixed;
   top: var(--nav); left: 0; right: 0;
-  background: var(--navy); border-bottom: 1px solid rgba(255,255,255,0.08);
+  background: #000000; border-bottom: 1px solid rgba(255,255,255,0.08);
   padding: 0.5rem 6%; flex-direction: column;
   z-index: 999; box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
@@ -102,21 +102,21 @@ a { text-decoration: none; color: inherit; }
 
 /* ── Page Hero ── */
 .page-hero {
-  background: linear-gradient(135deg, var(--navy) 0%, #0f3460 100%);
+  background: #ffffff;
   padding: 4rem 6%;
   text-align: center;
-  color: white;
+  color: #222222;
 }
 .page-hero .tag {
   display: inline-block;
-  background: rgba(230,57,70,0.2);
-  border: 1px solid rgba(230,57,70,0.4);
-  color: #ff8080; font-size: 0.72rem; font-weight: 700;
+  background: rgba(230,57,70,0.1);
+  border: 1px solid rgba(230,57,70,0.3);
+  color: var(--accent); font-size: 0.72rem; font-weight: 700;
   letter-spacing: 0.14em; padding: 0.35rem 1rem;
   border-radius: 50px; margin-bottom: 1rem; text-transform: uppercase;
 }
-.page-hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; margin-bottom: 0.8rem; }
-.page-hero p  { font-size: 1rem; color: rgba(255,255,255,0.65); }
+.page-hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; margin-bottom: 0.8rem; color: #222222; }
+.page-hero p  { font-size: 1rem; color: var(--muted); }
 
 /* ── Section ── */
 .section { padding: 5rem 6%; background: #ffffff; }
@@ -170,7 +170,7 @@ a { text-decoration: none; color: inherit; }
 
 /* ── Footer ── */
 .footer {
-  background: var(--navy); color: rgba(255,255,255,0.65);
+  background: #111111; color: rgba(255,255,255,0.65);
   padding: 3.5rem 6%; text-align: center;
 }
 .footer .f-logo { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.1rem; color: white; margin-bottom: 0.3rem; }
