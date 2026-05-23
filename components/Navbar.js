@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import Image from 'next/image'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -15,25 +14,39 @@ export default function Navbar() {
   }, [])
 
   const links = [
-    { href: '/',          label: 'Home' },
-    { href: '/about',     label: 'About Us' },
-    { href: '/teachers',  label: 'Instructors' },
-    { href: '/courses',   label: 'Programs' },
-    { href: '/results',   label: 'Admission Results' },
-    { href: '/notice',    label: 'Notice' },
+    { href: '/',         label: 'Home' },
+    { href: '/about',    label: 'About Us' },
+    { href: '/teachers', label: 'Instructors' },
+    { href: '/courses',  label: 'Programs' },
+    { href: '/results',  label: 'Admission Results' },
+    { href: '/notice',   label: 'Notice' },
   ]
 
   return (
     <>
-      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} style={{ padding: '0 2% 0 0' }}>
-        <Link href="/" className="nav-logo">
-          <Image
-            src="/icon2-1.png"
-            alt="강의하는 아이들 과학전문학원"
-            width={220}
-            height={55}
-            style={{ objectFit: 'contain' }}
-          />
+      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} style={{ padding: '0 2% 0 1%' }}>
+        <Link href="/" style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.2, textDecoration: 'none' }}>
+          <span style={{
+            fontFamily: "'Noto Sans KR', sans-serif",
+            fontWeight: 700,
+            fontSize: '1rem',
+            color: 'white',
+            letterSpacing: '-0.02em',
+            whiteSpace: 'nowrap'
+          }}>
+            강의하는 아이들 과학전문학원
+          </span>
+          <span style={{
+            fontFamily: "'Montserrat', sans-serif",
+            fontWeight: 300,
+            fontSize: '0.58rem',
+            color: 'rgba(255,255,255,0.7)',
+            letterSpacing: '0.22em',
+            textTransform: 'uppercase',
+            whiteSpace: 'nowrap'
+          }}>
+            Inspired Learning Science Academy
+          </span>
         </Link>
         <ul className="nav-links">
           {links.map(l => (
