@@ -13,30 +13,30 @@ export default function Home() {
         {/* Hero */}
         <section style={{
           minHeight: '100vh',
-          background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
+          background: '#ffffff',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           textAlign: 'center', padding: '0 6%', position: 'relative', overflow: 'hidden'
         }}>
           <div style={{ position: 'relative', zIndex: 1, maxWidth: '800px' }}>
             <div style={{
               display: 'inline-block',
-              background: 'rgba(230,57,70,0.2)', border: '1px solid rgba(230,57,70,0.4)',
-              color: '#ff8080', fontSize: '0.75rem', fontWeight: 700,
+              background: 'rgba(230,57,70,0.1)', border: '1px solid rgba(230,57,70,0.3)',
+              color: '#e63946', fontSize: '0.75rem', fontWeight: 700,
               letterSpacing: '0.14em', padding: '0.35rem 1rem',
               borderRadius: '50px', marginBottom: '1.5rem', textTransform: 'uppercase'
             }}>서울 강서구 과학 전문학원</div>
 
-            <h1 style={{ fontSize: 'clamp(2rem,5vw,3.6rem)', fontWeight: 900, color: 'white', lineHeight: 1.2, marginBottom: '1.2rem' }}>
+            <h1 style={{ fontSize: 'clamp(2rem,5vw,3.6rem)', fontWeight: 900, color: '#111111', lineHeight: 1.2, marginBottom: '1.2rem' }}>
               내신부터 수능까지<br />
               <span style={{ color: '#e63946' }}>과학, 제대로</span> 잡아드립니다
             </h1>
-            <p style={{ fontSize: 'clamp(0.95rem,2vw,1.1rem)', color: 'rgba(255,255,255,0.65)', marginBottom: '2.5rem', lineHeight: 1.9 }}>
+            <p style={{ fontSize: 'clamp(0.95rem,2vw,1.1rem)', color: '#666666', marginBottom: '2.5rem', lineHeight: 1.9 }}>
               강의하는 아이들 서울염창캠퍼스에서<br />
               체계적인 커리큘럼과 전문 강사진으로 성적을 올려드립니다.
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <Link href="/contact" className="btn-primary">무료 상담 신청</Link>
-              <Link href="/courses" className="btn-outline" style={{ color: 'white', borderColor: 'rgba(255,255,255,0.35)' }}>수업 과정 보기</Link>
+              <Link href="/courses" className="btn-outline">수업 과정 보기</Link>
             </div>
           </div>
         </section>
@@ -86,7 +86,7 @@ export default function Home() {
 
         {/* CTA Banner */}
         <section style={{
-          background: '#ffffff',
+          background: 'linear-gradient(135deg, #1a1a2e, #0f3460)',
           padding: '4rem 6%', textAlign: 'center', color: 'white'
         }}>
           <h2 style={{ fontSize: 'clamp(1.5rem,3vw,2rem)', fontWeight: 900, marginBottom: '1rem' }}>지금 바로 무료 상담 신청하세요</h2>
