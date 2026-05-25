@@ -25,9 +25,9 @@ export default function Home() {
             <h1 style={{ fontSize: 'clamp(2.5rem,6vw,4.5rem)', fontWeight: 900, color: '#222222', lineHeight: 1.2, marginBottom: '1.2rem' }}>
               Think Science Achieve More
             </h1>
-<p style={{ fontSize: 'clamp(1rem,2vw,1.5rem)', fontWeight: 700, color: '#757575', marginBottom: '1.5rem', lineHeight: 1.8 }}>              정확한 개념, 철저한 분석, 확실한 성적 향상
+<p style={{ fontSize: 'clamp(1rem,2vw,1.6rem)', fontWeight: 700, color: '#757575', marginBottom: '1.5rem', lineHeight: 1.8 }}>              정확한 개념, 철저한 분석, 확실한 성적 향상
             </p>
-<p style={{ fontSize: 'clamp(1rem,2vw,1.5rem)', fontWeight: 700, color: '#BDBDBD', marginBottom: '1.5rem', lineHeight: 1.8 }}>              결과로 증명하는 과학 교육
+<p style={{ fontSize: 'clamp(1rem,2vw,1.3rem)', fontWeight: 700, color: '#BDBDBD', marginBottom: '1.5rem', lineHeight: 1.8 }}>              결과로 증명하는 과학 교육
             </p>
           </div>
         </section>
