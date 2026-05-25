@@ -108,17 +108,19 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CTA Banner */}
-        <section style={{
-          background: 'linear-gradient(135deg, #111111, #222222)',
-          padding: '4rem 6%', textAlign: 'center', color: 'white'
-        }}>
-          <h2 style={{ fontSize: 'clamp(1.5rem,3vw,2rem)', fontWeight: 900, marginBottom: '1rem' }}>지금 바로 무료 상담 신청하세요</h2>
-          <p style={{ color: 'rgba(255,255,255,0.65)', marginBottom: '2rem', fontSize: '0.95rem' }}>
-            전문 강사진이 학생에게 맞는 최적의 과정을 안내해드립니다.
-          </p>
-          <Link href="/contact" className="btn-primary">상담 신청하기 →</Link>
-        </section>
+       {/* CTA Banner */}
+<section style={{
+  background: '#EEEEEE',
+  padding: '4rem 6%', textAlign: 'center',
+}}>
+  <h2 style={{ fontSize: 'clamp(1.3rem,3vw,1.9rem)', fontWeight: 900, color: '#222222', lineHeight: 1.6, marginBottom: '1.5rem' }}>
+    내신 만점에서 수능 1등급까지<br />
+    결과로 증명하는 과학 전문 커리큘럼
+  </h2>
+  <p style={{ fontSize: 'clamp(0.8rem,1.5vw,0.95rem)', color: '#666666', lineHeight: 2 }}>
+    중등내신 / 특목고 대비 / 고등내신 / 진로선택과목 / 수능 / 최상위 입시 / 수행평가 / 탐구활동 보고서
+  </p>
+</section>
 
         <Footer />
       </div>
