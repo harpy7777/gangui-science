@@ -18,14 +18,17 @@ export default function Home() {
           textAlign: 'center', padding: '0 6%', overflow: 'hidden'
         }}>
           {/* 배경 이미지 */}
-          <div style={{
-            position: 'absolute', inset: 0,
-            backgroundImage: 'url(https://images.unsplash.com/photo-1554290712-e640c2b3e38c?w=1600&q=80)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            filter: 'brightness(0.35)',
-            zIndex: 0
-          }} />
+          <img
+  src="https://images.unsplash.com/photo-1554290712-e640c2b3e38c?w=1600&q=80"
+  alt=""
+  style={{
+    position: 'absolute', inset: 0,
+    width: '100%', height: '100%',
+    objectFit: 'cover',
+    filter: 'brightness(0.35)',
+    zIndex: 0
+  }}
+/>
           {/* 오버레이 */}
           <div style={{
             position: 'absolute', inset: 0,
