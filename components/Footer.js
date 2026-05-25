@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="f-info">
         서울특별시 강서구 양천로 684 부성빌딩 4층 &nbsp;|&nbsp; 대표전화: 02-3665-9999
       </div>
-      <div className="f-copy">© 2026 강의하는 아이들 과수원 염창캠퍼스. All rights reserved.</div>
+      <div className="f-campus" style={{ color: '#9E9E9E', fontSize: '0.72rem', fontWeight: 700 }}>염창캠퍼스</div>
     </footer>
   )
 }
