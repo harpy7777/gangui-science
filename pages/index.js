@@ -20,10 +20,11 @@ export default function Home() {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}>
-          <div style={{
-            position: 'absolute', inset: 0,
-            background: 'rgba(0,0,0,0.65)'
-          }} />
+         <div style={{
+  position: 'absolute', inset: 0,
+  backdropFilter: 'blur(3px)',
+  background: 'rgba(255,255,255,0.15)'
+}} />
           <div style={{ position: 'relative', zIndex: 1, maxWidth: '800px' }}>
             <div style={{
               display: 'inline-block',
@@ -36,7 +37,8 @@ export default function Home() {
               내신부터 수능까지<br />
               <span style={{ color: '#e63946' }}>과학, 제대로</span> 잡아드립니다
             </h1>
-            <p style={{ fontSize: 'clamp(0.95rem,2vw,1.1rem)', color: 'rgba(255,255,255,0.75)', marginBottom: '2.5rem', lineHeight: 1.9 }}>
+            <p style={{ fontSize: 'clamp(0.95rem,2vw,1.1rem)', color: '#666666'
+                      , marginBottom: '2.5rem', lineHeight: 1.9 }}>
               강의하는 아이들 서울염창캠퍼스에서<br />
               체계적인 커리큘럼과 전문 강사진으로 성적을 올려드립니다.
             </p>
