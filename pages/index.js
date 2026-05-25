@@ -41,9 +41,9 @@ export default function Home() {
           gap: '1rem', background: 'white'
         }}>
           {[
-            { n: '15+', l: '년간 교육 경험' },
+            { n: '19+', l: '년간 교육 경험' },
             { n: '97%', l: '학생 재수강률' },
-            { n: '1,200+', l: '누적 수강생' },
+            { n: '2,000+', l: '누적 수강생' },
             { n: '4.9점', l: '평균 만족도' },
           ].map(s => (
             <div key={s.l} style={{ textAlign: 'center' }}>
