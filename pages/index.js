@@ -113,7 +113,7 @@ export default function Home() {
   background: '#FFFFFF',
   padding: '4rem 6%', textAlign: 'center',
 }}>
-  <h2 style={{ fontSize: 'clamp(1.3rem,3vw,1.9rem)', fontWeight: 900, color: '#757575', lineHeight: 1.6, marginBottom: '1.5rem' }}>
+  <h2 style={{ fontSize: 'clamp(1.3rem,3vw,1.9rem)', fontWeight: 900, color: '#212121', lineHeight: 1.6, marginBottom: '1.5rem' }}>
     내신 만점에서 수능 1등급까지<br />
     결과로 증명하는 과학 전문 커리큘럼
   </h2>
