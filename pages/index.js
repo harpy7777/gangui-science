@@ -11,15 +11,20 @@ export default function Home() {
       <div className="page-wrap">
 
         {/* Hero */}
-        <section style={{
-          minHeight: '67vh',
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          textAlign: 'center', padding: '0 6%',
-         backgroundImage: 'url(/hero.jpg)',
-backgroundSize: 'cover',
-backgroundPosition: 'center',
-        }}>
-          <div style={{ maxWidth: '800px' }}>
+      <section style={{
+  minHeight: '67vh',
+  position: 'relative',
+  display: 'flex', alignItems: 'center', justifyContent: 'center',
+  textAlign: 'center', padding: '0 6%',
+  backgroundImage: 'url(/hero.jpg)',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+}}>
+  <div style={{
+    position: 'absolute', inset: 0,
+    background: 'rgba(0,0,0,0.45)'
+  }} />
+  <div style={{ position: 'relative', zIndex: 1, maxWidth: '800px' }}>
             <div style={{
               display: 'inline-block',
               background: 'rgba(230,57,70,0.08)', border: '1px solid rgba(230,57,70,0.3)',
@@ -40,6 +45,7 @@ backgroundPosition: 'center',
               <Link href="/courses" className="btn-outline">수업 과정 보기</Link>
             </div>
           </div>
+                </div>
         </section>
 
         {/* Stats */}
