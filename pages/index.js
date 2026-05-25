@@ -22,14 +22,15 @@ export default function Home() {
         }}>
           <div style={{ position: 'absolute', inset: 0, backdropFilter: 'blur(1px)', background: 'rgba(255,255,255,0.15)' }} />
           <div style={{ position: 'relative', zIndex: 1, maxWidth: '800px' }}>
-            <h1 style={{ fontSize: 'clamp(2rem,5vw,3.6rem)', fontWeight: 900, color: 'white', lineHeight: 1.2, marginBottom: '1.2rem' }}>
-              내신부터 수능까지<br />
-              <span style={{ color: '#e63946' }}>과학, 제대로</span> 잡아드립니다
-            </h1>
-            <p style={{ fontSize: 'clamp(0.95rem,2vw,1.1rem)', color: '#666666', marginBottom: '2.5rem', lineHeight: 1.9 }}>
-              강의하는 아이들 서울염창캠퍼스에서<br />
-              체계적인 커리큘럼과 전문 강사진으로 성적을 올려드립니다.
-            </p>
+           <h1 style={{ fontSize: 'clamp(2rem,5vw,3.6rem)', fontWeight: 900, color: 'white', lineHeight: 1.2, marginBottom: '1rem' }}>
+  Think Science. Achieve More.
+</h1>
+<p style={{ fontSize: 'clamp(0.95rem,2vw,1.05rem)', color: 'rgba(255,255,255,0.85)', marginBottom: '0.6rem', lineHeight: 1.8 }}>
+  정확한 개념, 철저한 분석, 확실한 성적 향상
+</p>
+<p style={{ fontSize: 'clamp(0.85rem,1.8vw,0.95rem)', color: 'rgba(255,255,255,0.65)', marginBottom: '2.5rem', lineHeight: 1.8 }}>
+  결과로 증명하는 과학 교육
+</p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <Link href="/contact" className="btn-primary">무료 상담 신청</Link>
               <Link href="/courses" className="btn-outline" style={{ color: 'white', borderColor: 'rgba(255,255,255,0.4)' }}>수업 과정 보기</Link>
