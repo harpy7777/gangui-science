@@ -55,8 +55,8 @@ export default function Home() {
         <section className="section gray">
           <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
            
-            <h2 className="sec-title">학생 관리 과정</h2>
-             <div className="sec-label">Quick Menu</div>
+            <h2 className="sec-title">학습 관리 시스템</h2>
+             <div className="sec-label">Learning Management System</div>
           </div>
           <div className="grid-3" style={{ maxWidth: '900px', margin: '0 auto' }}>
             {[
