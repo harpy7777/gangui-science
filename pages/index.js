@@ -22,7 +22,7 @@ export default function Home() {
 }}>
   <div style={{
     position: 'absolute', inset: 0,
-    background: 'rgba(0,0,0,0.45)'
+    background: 'rgba(0,0,0,0.65)'
   }} />
   <div style={{ position: 'relative', zIndex: 1, maxWidth: '800px' }}>
             <div style={{
