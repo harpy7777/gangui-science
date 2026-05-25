@@ -22,7 +22,7 @@ export default function Home() {
         }}>
          <div style={{
   position: 'absolute', inset: 0,
-  backdropFilter: 'blur(3px)',
+  backdropFilter: 'blur(2px)',
   background: 'rgba(255,255,255,0.15)'
 }} />
           <div style={{ position: 'relative', zIndex: 1, maxWidth: '800px' }}>
