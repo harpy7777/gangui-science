@@ -22,19 +22,15 @@ export default function Home() {
         }}>
           <div style={{ position: 'absolute', inset: 0, backdropFilter: 'blur(1px)', background: 'rgba(255,255,255,0.15)' }} />
           <div style={{ position: 'relative', zIndex: 1, maxWidth: '800px' }}>
-           <h1 style={{ fontSize: 'clamp(2rem,5vw,3.6rem)', fontWeight: 900, color: 'white', lineHeight: 1.2, marginBottom: '1rem' }}>
+           <h1 style={{ fontSize: 'clamp(2.5rem,6vw,4.5rem)', fontWeight: 900, color: '#222222', lineHeight: 1.2, marginBottom: '1.2rem' }}>
   Think Science. Achieve More.
 </h1>
-<p style={{ fontSize: 'clamp(0.95rem,2vw,1.05rem)', color: 'rgba(255,255,255,0.85)', marginBottom: '0.6rem', lineHeight: 1.8 }}>
+<p style={{ fontSize: 'clamp(1rem,2vw,1.2rem)', fontWeight: 700, color: '#888888', marginBottom: '0.6rem', lineHeight: 1.8 }}>
   정확한 개념, 철저한 분석, 확실한 성적 향상
 </p>
-<p style={{ fontSize: 'clamp(0.85rem,1.8vw,0.95rem)', color: 'rgba(255,255,255,0.65)', marginBottom: '2.5rem', lineHeight: 1.8 }}>
+<p style={{ fontSize: 'clamp(0.95rem,2vw,1.1rem)', fontWeight: 700, color: '#222222', lineHeight: 1.8 }}>
   결과로 증명하는 과학 교육
 </p>
-            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link href="/contact" className="btn-primary">무료 상담 신청</Link>
-              <Link href="/courses" className="btn-outline" style={{ color: 'white', borderColor: 'rgba(255,255,255,0.4)' }}>수업 과정 보기</Link>
-            </div>
           </div>
         </section>
 
