@@ -25,14 +25,8 @@ export default function Home() {
   backdropFilter: 'blur(1px)',
   background: 'rgba(255,255,255,0.15)'
 }} />
-          <div style={{ position: 'relative', zIndex: 1, maxWidth: '800px' }}>
-            <div style={{
-              display: 'inline-block',
-              background: 'rgba(230,57,70,0.2)', border: '1px solid rgba(230,57,70,0.5)',
-              color: '#ff8080', fontSize: '0.75rem', fontWeight: 700,
-              letterSpacing: '0.14em', padding: '0.35rem 1rem',
-              borderRadius: '50px', marginBottom: '1.5rem', textTransform: 'uppercase'
-            }}>서울 강서구 과학 전문학원</div>
+         
+  
             <h1 style={{ fontSize: 'clamp(2rem,5vw,3.6rem)', fontWeight: 900, color: 'white', lineHeight: 1.2, marginBottom: '1.2rem' }}>
               내신부터 수능까지<br />
               <span style={{ color: '#e63946' }}>과학, 제대로</span> 잡아드립니다
