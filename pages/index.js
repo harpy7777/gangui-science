@@ -27,7 +27,7 @@ export default function Home() {
             </h1>
 <p style={{ fontSize: 'clamp(1rem,2vw,1.6rem)', fontWeight: 700, color: '#757575', marginBottom: '1.5rem', lineHeight: 1.8 }}>              정확한 개념, 철저한 분석, 확실한 성적 향상
             </p>
-<p style={{ fontSize: 'clamp(1rem,2vw,1.3rem)', fontWeight: 700, color: '#BDBDBD', marginBottom: '1.2rem', lineHeight: 1.8 }}>              결과로 증명하는 과학 교육
+<p style={{ fontSize: 'clamp(1rem,2vw,1.3rem)', fontWeight: 700, color: '#9E9E9E', marginBottom: '1.2rem', lineHeight: 1.8 }}>              결과로 증명하는 과학 교육
             </p>
           </div>
         </section>
