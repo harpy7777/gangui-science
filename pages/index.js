@@ -15,7 +15,9 @@ export default function Home() {
           minHeight: '67vh',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           textAlign: 'center', padding: '0 6%',
-          background: '#F8F9FA'
+         backgroundImage: 'url(/hero.jpg)',
+backgroundSize: 'cover',
+backgroundPosition: 'center',
         }}>
           <div style={{ maxWidth: '800px' }}>
             <div style={{
