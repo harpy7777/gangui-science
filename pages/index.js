@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 export default function Home() {
   return (
     <>
-      <Head><title>강의하는 아이들 서울염창캠퍼스</title></Head>
+      <Head><title>강의하는 아이들 과학전문학원</title></Head>
       <Navbar />
       <div className="page-wrap">
 
@@ -23,12 +23,12 @@ export default function Home() {
           <div style={{ position: 'absolute', inset: 0, backdropFilter: 'blur(1px)', background: 'rgba(255,255,255,0.15)' }} />
           <div style={{ position: 'relative', zIndex: 1, maxWidth: '800px' }}>
            <h1 style={{ fontSize: 'clamp(2.5rem,6vw,4.5rem)', fontWeight: 900, color: '#222222', lineHeight: 1.2, marginBottom: '1.2rem' }}>
-  Think Science. Achieve More.
+  Think Science Achieve More
 </h1>
-<p style={{ fontSize: 'clamp(1rem,2vw,1.2rem)', fontWeight: 700, color: '#888888', marginBottom: '0.6rem', lineHeight: 1.8 }}>
+<p style={{ fontSize: 'clamp(1rem,2vw,1.5rem)', fontWeight: 700, color: '#888888', marginBottom: '0.6rem', lineHeight: 1.8 }}>
   정확한 개념, 철저한 분석, 확실한 성적 향상
 </p>
-<p style={{ fontSize: 'clamp(0.95rem,2vw,1.1rem)', fontWeight: 700, color: '#222222', lineHeight: 1.8 }}>
+<p style={{ fontSize: 'clamp(0.95rem,2vw,1.3rem)', fontWeight: 700, color: '#222222', lineHeight: 1.8 }}>
   결과로 증명하는 과학 교육
 </p>
           </div>
