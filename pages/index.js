@@ -12,7 +12,7 @@ export default function Home() {
 
         {/* Hero */}
         <section style={{
-          minHeight: '60vh',
+          minHeight: '67vh',
           position: 'relative',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           textAlign: 'center', padding: '0 6%',
