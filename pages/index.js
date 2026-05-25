@@ -18,7 +18,7 @@ export default function Home() {
           textAlign: 'center', padding: '0 6%', overflow: 'hidden'
         }}>
           {/* 칠판 배경 */}
-         <div style={{ position: 'absolute', inset: 0, background: '#f9f9f9', zIndex: 0, overflow: 'hidden' }}>
+         <div style={{ position: 'absolute', inset: 0, background: '#F8F9FA', zIndex: 0, overflow: 'hidden' }}>
             <div style={{
               position: 'absolute', inset: 0,
               backgroundImage: `repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(255,255,255,0.03) 39px,rgba(255,255,255,0.03) 40px),repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(255,255,255,0.03) 39px,rgba(255,255,255,0.03) 40px)`,
