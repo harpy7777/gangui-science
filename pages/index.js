@@ -59,20 +59,52 @@ export default function Home() {
              <div className="sec-label" style={{ color: '#9E9E9E' }}>Learning Management System</div>
           </div>
           <div className="grid-3" style={{ maxWidth: '900px', margin: '0 auto' }}>
-            {[
-              { href: '/about',    icon: '🏫', title: '학원 소개',   desc: '강의하는 아이들의 교육 철학과 시설을 소개합니다.' },
-              { href: '/courses',  icon: '📚', title: '수업 과정',   desc: '중등·고등·수능 등 다양한 과정을 확인하세요.' },
-              { href: '/teachers', icon: '👨‍🏫', title: '강사진',     desc: '과목별 전문 강사진을 소개합니다.' },
-              { href: '/results',  icon: '🏆', title: '합격 실적',   desc: '우리 학생들의 빛나는 대입 성과를 확인하세요.' },
-              { href: '/notice',   icon: '📋', title: '공지사항',   desc: '학원 소식과 특강 일정을 확인하세요.' },
-              { href: '/contact',  icon: '📞', title: '상담 문의',   desc: '입학 상담 및 수업 문의를 받아드립니다.' },
-            ].map(m => (
-              <Link key={m.href} href={m.href} className="card" style={{ display: 'block' }}>
-                <div style={{ fontSize: '2.2rem', marginBottom: '1rem' }}>{m.icon}</div>
-                <h3 style={{ fontSize: '1.05rem', fontWeight: 700, marginBottom: '0.5rem' }}>{m.title}</h3>
-                <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7 }}>{m.desc}</p>
-              </Link>
-            ))}
+           {[
+  {
+    href: '/about',
+    icon: (
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#9E9E9E" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+        <circle cx="9" cy="9" r="1.5"/><line x1="13" y1="8" x2="18" y2="8"/><line x1="13" y1="11" x2="16" y2="11"/>
+      </svg>
+    ),
+    sub: '소수정예',
+    title: '맞춤 수업',
+    desc: '학생 개개인의 수준에 맞춘 소수정예 맞춤형 수업을 진행합니다.'
+  },
+  {
+    href: '/courses',
+    icon: (
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#9E9E9E" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+        <line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/>
+        <path d="M12 13l1.5 2 2.5-3" stroke="#9E9E9E" strokeWidth="1.2"/>
+      </svg>
+    ),
+    sub: '체계적인',
+    title: '학습 관리',
+    desc: '단계별 커리큘럼과 철저한 복습 관리로 빠짐없이 학습합니다.'
+  },
+  {
+    href: '/results',
+    icon: (
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#9E9E9E" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="2"/><line x1="7" y1="17" x2="7" y2="13"/><line x1="12" y1="17" x2="12" y2="9"/><line x1="17" y1="17" x2="17" y2="5"/>
+        <circle cx="17" cy="5" r="1.5" fill="#9E9E9E"/><polyline points="7 13 12 9 17 5"/>
+      </svg>
+    ),
+    sub: '성적 관리',
+    title: '분석 시스템',
+    desc: '정기적인 성적 분석과 피드백으로 취약점을 정확히 파악합니다.'
+  },
+].map(m => (
+  <Link key={m.href} href={m.href} className="card" style={{ display: 'block', textAlign: 'center', padding: '2.5rem 1.8rem' }}>
+    <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1.2rem' }}>{m.icon}</div>
+    <div style={{ fontSize: '0.82rem', color: '#9E9E9E', fontWeight: 500, marginBottom: '0.3rem' }}>{m.sub}</div>
+    <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.7rem', color: '#222222' }}>{m.title}</h3>
+    <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7 }}>{m.desc}</p>
+  </Link>
+))}
           </div>
         </section>
 
