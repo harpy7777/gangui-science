@@ -56,7 +56,7 @@ export default function Home() {
           <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
            
             <h2 className="sec-title">학습 관리 시스템</h2>
-             <div className="sec-label" style={{ color: '#333333' }}>Learning Management System</div>
+             <div className="sec-label" style={{ color: '#9E9E9E' }}>Learning Management System</div>
           </div>
           <div className="grid-3" style={{ maxWidth: '900px', margin: '0 auto' }}>
             {[
