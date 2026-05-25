@@ -22,7 +22,7 @@ export default function Home() {
         }}>
           <div style={{ position: 'absolute', inset: 0, backdropFilter: 'blur(1px)', background: 'rgba(255,255,255,0.15)' }} />
           <div style={{ position: 'relative', zIndex: 1, maxWidth: '800px' }}>
-            <h1 style={{ fontSize: 'clamp(2.5rem,6vw,4.5rem)', fontWeight: 900, color: '#222222', lineHeight: 1.2, marginBottom: '1.5rem' }}>
+            <h1 style={{ fontSize: 'clamp(2.5rem,6vw,4.5rem)', fontWeight: 900, color: '#222222', lineHeight: 1.2, marginBottom: '1.7rem' }}>
               Think Science Achieve More
             </h1>
 <p style={{ fontSize: 'clamp(1rem,2vw,1.6rem)', fontWeight: 700, color: '#757575', marginBottom: '1.5rem', lineHeight: 1.8 }}>              정확한 개념, 철저한 분석, 확실한 성적 향상
