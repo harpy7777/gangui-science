@@ -12,73 +12,41 @@ export default function Home() {
 
         {/* Hero */}
         <section style={{
-        minHeight: '67vh',
+          minHeight: '67vh',
           position: 'relative',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           textAlign: 'center', padding: '0 6%', overflow: 'hidden'
         }}>
-          {/* 배경 이미지 */}
-          <div style={{
-  position: 'absolute', inset: 0,
-  background: '#1a3a2a',
-  zIndex: 0,
-  overflow: 'hidden'
-}}>
-  {/* 칠판 질감 */}
-  <div style={{
-    position: 'absolute', inset: 0,
-    backgroundImage: `
-      repeating-linear-gradient(
-        0deg,
-        transparent,
-        transparent 39px,
-        rgba(255,255,255,0.03) 39px,
-        rgba(255,255,255,0.03) 40px
-      ),
-      repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent 39px,
-        rgba(255,255,255,0.03) 39px,
-        rgba(255,255,255,0.03) 40px
-      )
-    `,
-  }} />
-  {/* 수식들 */}
-  <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', opacity: 0.12 }} xmlns="http://www.w3.org/2000/svg">
-    <text x="5%" y="20%" fill="white" fontSize="22" fontFamily="serif" transform="rotate(-3, 100, 100)">E = mc²</text>
-    <text x="75%" y="15%" fill="white" fontSize="18" fontFamily="serif" transform="rotate(2, 800, 80)">F = ma</text>
-    <text x="15%" y="75%" fill="white" fontSize="20" fontFamily="serif" transform="rotate(-2, 200, 400)">PV = nRT</text>
-    <text x="60%" y="80%" fill="white" fontSize="18" fontFamily="serif" transform="rotate(3, 700, 450)">ΔE = hf</text>
-    <text x="40%" y="12%" fill="white" fontSize="16" fontFamily="serif">v = λf</text>
-    <text x="82%" y="55%" fill="white" fontSize="19" fontFamily="serif" transform="rotate(-2, 900, 300)">∑F = 0</text>
-    <text x="8%" y="45%" fill="white" fontSize="17" fontFamily="serif" transform="rotate(2, 100, 250)">pH = -log[H⁺]</text>
-    <text x="50%" y="65%" fill="white" fontSize="15" fontFamily="serif">6CO₂ + 6H₂O → C₆H₁₂O₆</text>
-    {/* 분자 구조 */}
-    <circle cx="88%" cy="30%" r="8" fill="none" stroke="white" strokeWidth="1.5"/>
-    <circle cx="91%" cy="25%" r="6" fill="none" stroke="white" strokeWidth="1.5"/>
-    <line x1="88%" y1="30%" x2="91%" y2="25%" stroke="white" strokeWidth="1.5"/>
-    <circle cx="85%" cy="25%" r="6" fill="none" stroke="white" strokeWidth="1.5"/>
-    <line x1="88%" y1="30%" x2="85%" y2="25%" stroke="white" strokeWidth="1.5"/>
-    {/* 원자 궤도 */}
-    <ellipse cx="20%" cy="88%" rx="40" ry="15" fill="none" stroke="white" strokeWidth="1" transform="rotate(30, 300, 500)"/>
-    <ellipse cx="20%" cy="88%" rx="40" ry="15" fill="none" stroke="white" strokeWidth="1" transform="rotate(90, 300, 500)"/>
-    <ellipse cx="20%" cy="88%" rx="40" ry="15" fill="none" stroke="white" strokeWidth="1" transform="rotate(150, 300, 500)"/>
-    <circle cx="20%" cy="88%" r="5" fill="white" opacity="0.5"/>
-  </svg>
-  {/* 분필 자국 효과 */}
-  <div style={{
-    position: 'absolute', inset: 0,
-    background: 'radial-gradient(ellipse at center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.3) 100%)'
-  }} />
-</div>
-/>
+          {/* 칠판 배경 */}
+          <div style={{ position: 'absolute', inset: 0, background: '#1a3a2a', zIndex: 0, overflow: 'hidden' }}>
+            <div style={{
+              position: 'absolute', inset: 0,
+              backgroundImage: `repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(255,255,255,0.03) 39px,rgba(255,255,255,0.03) 40px),repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(255,255,255,0.03) 39px,rgba(255,255,255,0.03) 40px)`,
+            }} />
+            <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', opacity: 0.12 }} xmlns="http://www.w3.org/2000/svg">
+              <text x="5%" y="20%" fill="white" fontSize="22" fontFamily="serif" transform="rotate(-3, 100, 100)">E = mc²</text>
+              <text x="75%" y="15%" fill="white" fontSize="18" fontFamily="serif" transform="rotate(2, 800, 80)">F = ma</text>
+              <text x="15%" y="75%" fill="white" fontSize="20" fontFamily="serif" transform="rotate(-2, 200, 400)">PV = nRT</text>
+              <text x="60%" y="80%" fill="white" fontSize="18" fontFamily="serif" transform="rotate(3, 700, 450)">ΔE = hf</text>
+              <text x="40%" y="12%" fill="white" fontSize="16" fontFamily="serif">v = λf</text>
+              <text x="82%" y="55%" fill="white" fontSize="19" fontFamily="serif" transform="rotate(-2, 900, 300)">∑F = 0</text>
+              <text x="8%" y="45%" fill="white" fontSize="17" fontFamily="serif" transform="rotate(2, 100, 250)">pH = -log[H⁺]</text>
+              <text x="50%" y="65%" fill="white" fontSize="15" fontFamily="serif">6CO₂ + 6H₂O → C₆H₁₂O₆</text>
+              <circle cx="88%" cy="30%" r="8" fill="none" stroke="white" strokeWidth="1.5"/>
+              <circle cx="91%" cy="25%" r="6" fill="none" stroke="white" strokeWidth="1.5"/>
+              <line x1="88%" y1="30%" x2="91%" y2="25%" stroke="white" strokeWidth="1.5"/>
+              <circle cx="85%" cy="25%" r="6" fill="none" stroke="white" strokeWidth="1.5"/>
+              <line x1="88%" y1="30%" x2="85%" y2="25%" stroke="white" strokeWidth="1.5"/>
+              <ellipse cx="20%" cy="88%" rx="40" ry="15" fill="none" stroke="white" strokeWidth="1" transform="rotate(30, 300, 500)"/>
+              <ellipse cx="20%" cy="88%" rx="40" ry="15" fill="none" stroke="white" strokeWidth="1" transform="rotate(90, 300, 500)"/>
+              <ellipse cx="20%" cy="88%" rx="40" ry="15" fill="none" stroke="white" strokeWidth="1" transform="rotate(150, 300, 500)"/>
+              <circle cx="20%" cy="88%" r="5" fill="white" opacity="0.5"/>
+            </svg>
+            <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.3) 100%)' }} />
+          </div>
+
           {/* 오버레이 */}
-          <div style={{
-            position: 'absolute', inset: 0,
-            background: 'linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%)',
-            zIndex: 1
-          }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.5) 100%)', zIndex: 1 }} />
 
           <div style={{ position: 'relative', zIndex: 2, maxWidth: '800px' }}>
             <div style={{
@@ -88,7 +56,6 @@ export default function Home() {
               letterSpacing: '0.14em', padding: '0.35rem 1rem',
               borderRadius: '50px', marginBottom: '1.5rem', textTransform: 'uppercase'
             }}>서울 강서구 과학 전문학원</div>
-
             <h1 style={{ fontSize: 'clamp(2rem,5vw,3.6rem)', fontWeight: 900, color: 'white', lineHeight: 1.2, marginBottom: '1.2rem' }}>
               내신부터 수능까지<br />
               <span style={{ color: '#e63946' }}>과학, 제대로</span> 잡아드립니다
