@@ -45,7 +45,7 @@ export default function Home() {
             { n: '4.9점', l: '평균 만족도' },
           ].map(s => (
             <div key={s.l} style={{ textAlign: 'center' }}>
-              <div style={{ fontFamily: 'Montserrat,sans-serif', fontSize: '2.2rem', fontWeight: 900, color: '#e63946', lineHeight: 1, marginBottom: '0.4rem' }}>{s.n}</div>
+              <div style={{ fontFamily: 'Montserrat,sans-serif', fontSize: '2.2rem', fontWeight: 900, color: '#111111', lineHeight: 1, marginBottom: '0.4rem' }}>{s.n}</div>
               <div style={{ fontSize: '0.82rem', color: 'var(--muted)' }}>{s.l}</div>
             </div>
           ))}
