@@ -54,8 +54,9 @@ export default function Home() {
         {/* Quick Links */}
         <section className="section gray">
           <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-            <div className="sec-label">Quick Menu</div>
-            <h2 className="sec-title">무엇을 알고 싶으신가요?</h2>
+           
+            <h2 className="sec-title">학생 관리 과정</h2>
+             <div className="sec-label">Quick Menu</div>
           </div>
           <div className="grid-3" style={{ maxWidth: '900px', margin: '0 auto' }}>
             {[
