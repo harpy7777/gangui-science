@@ -58,12 +58,12 @@ export default function Home() {
           background: '#f8f9fa',
           padding: '4rem 6%', textAlign: 'center',
         }}>
-          <h2 style={{ fontSize: 'clamp(1.3rem,3vw,1.9rem)', fontWeight: 900, color: '#212121', lineHeight: 1.6, marginBottom: '1.5rem' }}>
+         <br /><br /> <h2 style={{ fontSize: 'clamp(1.3rem,3vw,1.9rem)', fontWeight: 900, color: '#212121', lineHeight: 1.6, marginBottom: '1.5rem' }}>
             내신 만점에서 수능 1등급까지<br />
             결과로 증명하는 과학 전문 커리큘럼
           </h2>
-          <p style={{ fontSize: 'clamp(0.8rem,1.5vw,0.95rem)', color: '#666666', lineHeight: 2, fontWeight: 700 }}>
-            중등내신 / 특목고 대비 / 고등내신 / 진로선택과목 / 수능 / 최상위 입시 / 수행평가 / 탐구활동 보고서
+          <p style={{ fontSize: 'clamp(0.8rem,1.5vw,0.95rem)', color: '#666666', lineHeight: 2, fontWeight: 700 }}><br /><br />
+            중등내신 / 특목고 대비 / 고등내신 / 진로선택과목 / 수능 / 최상위 입시 / 수행평가 / 탐구활동 보고서<br /><br />
           </p>
         </section>
 
