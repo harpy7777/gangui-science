@@ -30,11 +30,9 @@ export default function About() {
               그리고 학생 개개인에 대한 밀도 높은 관리로 내신과 수능 모두에서 흔들리지 않는 실력을 완성합니다.<br /><br /><br />
               "과학의 즐거움이, 결국 성적 향상으로 이어지도록.내신부터 수능까지, 과학의 모든 길을 함께 설계합니다."
             </p>
-            <div style={{ background: 'var(--bg2)', borderRadius: '12px', padding: '2rem', borderLeft: '4px solid var(--accent)' }}>
-              <p style={{ fontSize: '1.05rem', fontStyle: 'italic', color: 'var(--primary)', lineHeight: 1.9 }}>
-                "내신부터 수능까지, 과학의 모든 길을 함께 설계합니다."
-              </p>
-            </div>
+            <h2 className="sec-title" style={{ marginTop: '1rem' }}>
+  과학의 즐거움이, 결국 성적 향상으로 이어지도록.<br />내신부터 수능까지, 과학의 모든 길을 함께 설계합니다.
+</h2>
           </div>
         </section>
 
