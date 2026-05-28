@@ -22,13 +22,20 @@ export default function About() {
         {/* 인사말 */}
         <section className="section">
           <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-            <div className="sec-label">원장 인사말</div>
+           
             <h2 className="sec-title">과학의 즐거움을 성적 향상으로</h2>
             <p className="sec-desc" style={{ margin: '0 auto 2rem' }}>
-              안녕하세요. 강의하는 아이들 서울염창캠퍼스 원장입니다.<br /><br />
-              저희 학원은 단순한 문제 풀이가 아닌, 과학의 원리를 깊이 이해하고
-              스스로 사고하는 힘을 키우는 것을 목표로 합니다.
-              체계적인 커리큘럼과 과목별 전문 강사진으로 학생 개개인의 성적 향상을 이끌어냅니다.
+              결국 성적은,
+얼마나 깊이 이해했는가에서 결정됩니다.<br /><br />
+             강의하는 아이들 서울염창캠퍼스는
+과학을 ‘외우는 과목’이 아닌
+‘이해하는 과목’으로 바꾸는 공간입니다.<br /><br />
+  체계적인 커리큘럼,
+과목별 전문 강사진,<br />
+  그리고 학생 개개인에 대한 밀도 높은 관리로
+내신과 수능 모두에서 흔들리지 않는 실력을 완성합니다.<br /><br />
+  “과학의 즐거움이,
+결국 성적 향상으로 이어지도록.”<br /><br />
             </p>
             <div style={{ background: 'var(--bg2)', borderRadius: '12px', padding: '2rem', borderLeft: '4px solid var(--accent)' }}>
               <p style={{ fontSize: '1.05rem', fontStyle: 'italic', color: 'var(--primary)', lineHeight: 1.9 }}>
