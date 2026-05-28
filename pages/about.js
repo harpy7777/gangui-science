@@ -16,7 +16,7 @@ export default function About() {
             <span style={{ fontSize: '1.1rem', fontWeight: 700, color: '#555555', letterSpacing: '0.14em', whiteSpace: 'nowrap' }}>About Us</span>
             <div style={{ flex: 1, height: '1px', background: '#999999' }} />
           </div>
-          <p style={{ fontSize: '1.6rem', color: '#444444', fontWeight: 500 }}>과학의 본질을 이해하는 수업</p>
+          <p style={{ fontSize: '1.6rem', color: '#444444', fontWeight: 500 }}>과학의 본질을 이해하는 수업</p><div className="sec-label" style={{ color: '#9E9E9E' }}>Understanding the Essence of Science</div>
         </div>
 
         {/* 인사말 */}
