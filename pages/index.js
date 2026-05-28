@@ -59,8 +59,8 @@ export default function Home() {
           padding: '4rem 6%', textAlign: 'center',
         }}>
           <h2 style={{ fontSize: 'clamp(1.3rem,3vw,1.9rem)', fontWeight: 900, color: '#212121', lineHeight: 1.6, marginBottom: '2rem' }}>
-            내신 만점에서 수능 1등급까지<br />
-            결과로 증명하는 과학 전문 커리큘럼
+        <br /><br />    내신 만점에서 수능 1등급까지<br />
+            결과로 증명하는 과학 전문 커리큘럼<br /><br />
           </h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.8rem', justifyContent: 'center' }}>
             {['중등내신', '특목고 대비', '고등내신', '진로선택과목', '수능', '최상위 입시', '수행평가', '탐구활동 보고서'].map(item => (
@@ -75,7 +75,7 @@ export default function Home() {
                 minWidth: '120px',
                 textAlign: 'center',
               }}>{item}</span>
-            ))}
+            ))}<br /><br />
           </div>
         </section>
 
