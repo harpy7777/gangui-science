@@ -23,7 +23,7 @@ export default function About() {
         <section className="section">
           <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
            
-            <h2 className="sec-title">과학의 즐거움을 성적 향상으로</h2>
+            <h2 className="sec-title">과학의 즐거움을 성적 향상으로</h2><br /><br />
             <p className="sec-desc" style={{ margin: '0 auto 2rem' }}>
               결국 성적은,
 얼마나 깊이 이해했는가에서 결정됩니다.<br /><br />
