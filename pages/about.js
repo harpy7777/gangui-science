@@ -20,8 +20,14 @@ export default function About() {
         </div>
 
         {/* 인사말 */}
-        <section className="section">
-          <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+        <section className="section" style={{
+          position: 'relative',
+          backgroundImage: 'url(/about-hero.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}>
+          <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,255,255,0.88)' }} />
+          <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 1 }}>
             <p className="sec-desc" style={{ margin: '0 auto 2rem' }}>
               결국 성적은, 얼마나 깊이 이해했는가에서 결정됩니다.<br /><br /><br />
               강의하는 아이들은 과학을 '외우는 과목'이 아닌 '이해하는 과목'으로 바꾸는 공간입니다.<br /><br /><br />
@@ -38,7 +44,7 @@ export default function About() {
         <section className="section gray">
           <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
             <h2 className="sec-title">학습 관리 시스템</h2>
-            <div className="sec-label" style={{ color: '#9E9E9E' }}>Learning Management System</div><br />
+            <div className="sec-label" style={{ color: '#9E9E9E' }}>Learning Management System</div>
           </div>
           <div className="grid-3" style={{ maxWidth: '900px', margin: '0 auto' }}>
             {[
