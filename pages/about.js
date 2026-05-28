@@ -22,7 +22,7 @@ export default function About() {
         {/* 인사말 */}
         <section className="section">
           <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-            <h2 className="sec-title">과학의 즐거움을 성적 향상으로</h2><br /><br /><br /><br />
+            
             <p className="sec-desc" style={{ margin: '0 auto 2rem' }}>
               결국 성적은, 얼마나 깊이 이해했는가에서 결정됩니다.<br /><br /><br />
               강의하는 아이들 서울염창캠퍼스는 과학을 '외우는 과목'이 아닌 '이해하는 과목'으로 바꾸는 공간입니다.<br /><br /><br />
