@@ -10,32 +10,25 @@ export default function About() {
       <Navbar />
       <div className="page-wrap">
 
-      <div className="page-hero" style={{ background: '#f8f9fa' }}>
-  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', justifyContent: 'center', marginBottom: '3.5rem' }}>
-    <div style={{ flex: 1, height: '1px', background: '#999999' }} />
-    <span style={{ fontSize: '1.1rem', fontWeight: 700, color: '#555555', letterSpacing: '0.14em', whiteSpace: 'nowrap' }}>About Us</span>
-    <div style={{ flex: 1, height: '1px', background: '#999999' }} />
-  </div>
-  <p style={{ fontSize: '1.4rem', color: '#444444', fontWeight: 500 }}>과학의 본질을 이해하는 수업</p>
-</div>
+        <div className="page-hero" style={{ background: '#f8f9fa' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', justifyContent: 'center', marginBottom: '3.5rem' }}>
+            <div style={{ flex: 1, height: '1px', background: '#999999' }} />
+            <span style={{ fontSize: '1.1rem', fontWeight: 700, color: '#555555', letterSpacing: '0.14em', whiteSpace: 'nowrap' }}>About Us</span>
+            <div style={{ flex: 1, height: '1px', background: '#999999' }} />
+          </div>
+          <p style={{ fontSize: '1.4rem', color: '#444444', fontWeight: 500 }}>과학의 본질을 이해하는 수업</p>
+        </div>
 
         {/* 인사말 */}
         <section className="section">
           <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-           
             <h2 className="sec-title">과학의 즐거움을 성적 향상으로</h2><br /><br />
             <p className="sec-desc" style={{ margin: '0 auto 2rem' }}>
-              결국 성적은,
-얼마나 깊이 이해했는가에서 결정됩니다.<br /><br />
-             강의하는 아이들 서울염창캠퍼스는
-과학을 ‘외우는 과목’이 아닌
-‘이해하는 과목’으로 바꾸는 공간입니다.<br /><br />
-  체계적인 커리큘럼,
-과목별 전문 강사진,<br />
-  그리고 학생 개개인에 대한 밀도 높은 관리로
-내신과 수능 모두에서 흔들리지 않는 실력을 완성합니다.<br /><br />
-  “과학의 즐거움이,
-결국 성적 향상으로 이어지도록.”<br /><br />
+              결국 성적은, 얼마나 깊이 이해했는가에서 결정됩니다.<br /><br />
+              강의하는 아이들 서울염창캠퍼스는 과학을 '외우는 과목'이 아닌 '이해하는 과목'으로 바꾸는 공간입니다.<br /><br />
+              체계적인 커리큘럼, 과목별 전문 강사진,<br />
+              그리고 학생 개개인에 대한 밀도 높은 관리로 내신과 수능 모두에서 흔들리지 않는 실력을 완성합니다.<br /><br />
+              "과학의 즐거움이, 결국 성적 향상으로 이어지도록."
             </p>
             <div style={{ background: 'var(--bg2)', borderRadius: '12px', padding: '2rem', borderLeft: '4px solid var(--accent)' }}>
               <p style={{ fontSize: '1.05rem', fontStyle: 'italic', color: 'var(--primary)', lineHeight: 1.9 }}>
@@ -67,41 +60,6 @@ export default function About() {
               </div>
             ))}
           </div>
-        </section>
-
-        {/* 학원 정보 */}
-        <section className="section">
-          <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-            <div className="sec-label">Information</div>
-            <h2 className="sec-title">학원 정보</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1px', marginTop: '1.5rem', border: '1px solid var(--border)', borderRadius: '12px', overflow: 'hidden' }}>
-              {[
-                { label: '학원명',     value: '강의하는 아이들 서울염창캠퍼스' },
-                { label: '주소',      value: '서울특별시 강서구 양천로 684 부성빌딩 4층' },
-                { label: '대표전화',   value: '02-3665-9999' },
-                { label: '상담 시간',  value: '평일 14:00 ~ 21:00 / 토요일 10:00 ~ 18:00 (일요일 휴무)' },
-                { label: '교통',      value: '지하철 9호선 염창역 도보 5분' },
-              ].map((r, i) => (
-                <div key={r.label} style={{
-                  display: 'grid', gridTemplateColumns: '140px 1fr',
-                  background: i % 2 === 0 ? 'var(--bg2)' : 'white',
-                  padding: '1rem 1.5rem', gap: '1rem', alignItems: 'center'
-                }}>
-                  <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--muted)' }}>{r.label}</span>
-                  <span style={{ fontSize: '0.9rem' }}>{r.value}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section style={{ background: 'var(--accent)', padding: '3rem 6%', textAlign: 'center' }}>
-          <h2 style={{ color: 'white', fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem' }}>지금 바로 상담 신청하세요</h2>
-          <Link href="/contact" style={{
-            display: 'inline-block', background: 'white', color: 'var(--accent)',
-            padding: '0.85rem 2.2rem', borderRadius: '6px', fontWeight: 700, fontSize: '0.95rem'
-          }}>무료 상담 신청 →</Link>
         </section>
 
         <Footer />
