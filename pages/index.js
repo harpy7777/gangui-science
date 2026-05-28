@@ -37,7 +37,7 @@ export default function Home() {
         {/* Stats */}
         <div style={{
           display: 'grid', gridTemplateColumns: 'repeat(4,1fr)',
-          padding: '2.5rem 6%', borderBottom: '1px solid var(--border)',
+          padding: '4rem 6%', borderBottom: '1px solid var(--border)',
           gap: '1rem', background: 'white'
         }}>
           {[
@@ -47,13 +47,11 @@ export default function Home() {
             { n: '4.9점', l: '평균 만족도' },
           ].map(s => (
             <div key={s.l} style={{ textAlign: 'center' }}>
-              <div style={{ fontFamily: 'Montserrat,sans-serif', fontSize: '2.2rem', fontWeight: 900, color: '#111111', lineHeight: 1, marginBottom: '0.4rem' }}>{s.n}</div>
-              <div style={{ fontSize: '0.82rem', color: 'var(--muted)' }}>{s.l}</div>
+              <div style={{ fontFamily: 'Montserrat,sans-serif', fontSize: '3rem', fontWeight: 900, color: '#111111', lineHeight: 1, marginBottom: '0.6rem' }}>{s.n}</div>
+              <div style={{ fontSize: '0.95rem', color: 'var(--muted)' }}>{s.l}</div>
             </div>
           ))}
         </div>
-
-     
 
         {/* CTA Banner */}
         <section style={{
