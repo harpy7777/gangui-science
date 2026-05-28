@@ -18,7 +18,11 @@ export default function About() {
 }}>
   <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,255,255,0.75)' }} />
   <div style={{ position: 'relative', zIndex: 1 }}>
-    <div className="tag">About Us</div>
+ <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', justifyContent: 'center', marginBottom: '1rem' }}>
+  <div style={{ flex: 1, height: '1px', background: '#999999' }} />
+  <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#555555', letterSpacing: '0.14em', whiteSpace: 'nowrap' }}>About Us</span>
+  <div style={{ flex: 1, height: '1px', background: '#999999' }} />
+</div>
     <h1>학원 소개</h1>
     <p>강의하는 아이들 서울염창캠퍼스를 소개합니다</p>
   </div>
