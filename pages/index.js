@@ -57,7 +57,7 @@ export default function Home() {
 
         {/* CTA Banner */}
         <section style={{
-          background: '#f8f9fa,
+          background: '#f8f9fa',
           padding: '4rem 6%', textAlign: 'center',
         }}>
           <h2 style={{ fontSize: 'clamp(1.3rem,3vw,1.9rem)', fontWeight: 900, color: '#212121', lineHeight: 1.6, marginBottom: '1.5rem' }}>
