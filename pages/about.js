@@ -11,12 +11,12 @@ export default function About() {
       <div className="page-wrap">
 
       <div className="page-hero" style={{ background: '#ffffff' }}>
-  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', justifyContent: 'center', marginBottom: '2.5rem' }}>
+  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', justifyContent: 'center', marginBottom: '3.5rem' }}>
     <div style={{ flex: 1, height: '1px', background: '#999999' }} />
     <span style={{ fontSize: '1.1rem', fontWeight: 700, color: '#555555', letterSpacing: '0.14em', whiteSpace: 'nowrap' }}>About Us</span>
     <div style={{ flex: 1, height: '1px', background: '#999999' }} />
   </div>
-  <p style={{ fontSize: '1.1rem', color: '#444444', fontWeight: 500 }}>강의하는 아이들 과학전문학원 염창캠퍼스를 소개합니다.</p>
+  <p style={{ fontSize: '1.6rem', color: '#444444', fontWeight: 700 }}>강의하는 아이들 과학전문학원 염창캠퍼스를 소개합니다.</p>
 </div>
 
         {/* 인사말 */}
