@@ -10,7 +10,7 @@ export default function About() {
       <Navbar />
       <div className="page-wrap">
 
-      <div className="page-hero" style={{ background: '#ffffff' }}>
+      <div className="page-hero" style={{ background: '#f8f9fa' }}>
   <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', justifyContent: 'center', marginBottom: '3.5rem' }}>
     <div style={{ flex: 1, height: '1px', background: '#999999' }} />
     <span style={{ fontSize: '1.1rem', fontWeight: 700, color: '#555555', letterSpacing: '0.14em', whiteSpace: 'nowrap' }}>About Us</span>
