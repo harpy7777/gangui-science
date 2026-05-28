@@ -31,7 +31,7 @@ export default function About() {
             
             </p>
          <p style={{ fontSize: '1.5rem', fontWeight: 600, color: '#333333', lineHeight: 1.9, marginTop: '1rem' }}>
-  내신부터 수능까지, 결과로 증명하는 과학 교육<br /><br /><br />
+  내신부터 수능까지 결과로 증명하는 과학 교육<br /><br />
 </p>
           </div>
         </section>
