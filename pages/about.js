@@ -10,11 +10,19 @@ export default function About() {
       <Navbar />
       <div className="page-wrap">
 
-        <div className="page-hero">
-          <div className="tag">About Us</div>
-          <h1>학원 소개</h1>
-          <p>강의하는 아이들 서울염창캠퍼스를 소개합니다</p>
-        </div>
+      <div className="page-hero" style={{
+  backgroundImage: 'url(/about-hero.jpg)',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  position: 'relative',
+}}>
+  <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,255,255,0.75)' }} />
+  <div style={{ position: 'relative', zIndex: 1 }}>
+    <div className="tag">About Us</div>
+    <h1>학원 소개</h1>
+    <p>강의하는 아이들 서울염창캠퍼스를 소개합니다</p>
+  </div>
+</div>
 
         {/* 인사말 */}
         <section className="section">
