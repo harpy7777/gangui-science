@@ -10,21 +10,13 @@ export default function About() {
       <Navbar />
       <div className="page-wrap">
 
-      <div className="page-hero" style={{
-  backgroundImage: 'url(/about-hero.jpg)',
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  position: 'relative',
-}}>
-  <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,255,255,0.75)' }} />
-  <div style={{ position: 'relative', zIndex: 1 }}>
- <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', justifyContent: 'center', marginBottom: '1.5rem' }}>
-  <div style={{ flex: 1, height: '1px', background: '#999999' }} />
-  <span style={{ fontSize: '1.1rem', fontWeight: 700, color: '#555555', letterSpacing: '0.14em', whiteSpace: 'nowrap' }}>About Us</span>
-  <div style={{ flex: 1, height: '1px', background: '#999999' }} />
-</div>
-<p style={{ fontSize: '1.1rem', color: '#444444', fontWeight: 500 }}>강의하는 아이들 과학전문학원 염창캠퍼스를 소개합니다.</p>
+      <div className="page-hero" style={{ background: '#ffffff' }}>
+  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', justifyContent: 'center', marginBottom: '2.5rem' }}>
+    <div style={{ flex: 1, height: '1px', background: '#999999' }} />
+    <span style={{ fontSize: '1.1rem', fontWeight: 700, color: '#555555', letterSpacing: '0.14em', whiteSpace: 'nowrap' }}>About Us</span>
+    <div style={{ flex: 1, height: '1px', background: '#999999' }} />
   </div>
+  <p style={{ fontSize: '1.1rem', color: '#444444', fontWeight: 500 }}>강의하는 아이들 과학전문학원 염창캠퍼스를 소개합니다.</p>
 </div>
 
         {/* 인사말 */}
