@@ -4,18 +4,11 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 const teachers = [
-  { emoji: '👨‍🏫', name: '강사 이름', subject: '물리', career: ['경력 및 학력을', '여기에 입력해 주세요'] },
-  { emoji: '👨‍🔬', name: '강사 이름', subject: '화학', career: ['경력 및 학력을', '여기에 입력해 주세요'] },
-  { emoji: '👩‍🏫', name: '강사 이름', subject: '생명과학', career: ['경력 및 학력을', '여기에 입력해 주세요'] },
-  { emoji: '🧑‍🔬', name: '강사 이름', subject: '지구과학', career: ['경력 및 학력을', '여기에 입력해 주세요'] },
+  { emoji: '👨‍🏫', name: '강사 이름', subject: '물리', career: ['경력 및 학력을 여기에 입력해 주세요'] },
+  { emoji: '👨‍🔬', name: '강사 이름', subject: '화학', career: ['경력 및 학력을 여기에 입력해 주세요'] },
+  { emoji: '👩‍🏫', name: '강사 이름', subject: '생명과학', career: ['경력 및 학력을 여기에 입력해 주세요'] },
+  { emoji: '🧑‍🔬', name: '강사 이름', subject: '지구과학', career: ['경력 및 학력을 여기에 입력해 주세요'] },
 ]
-
-const subjectColors = {
-  '물리': '#1a1a2e',
-  '화학': '#e63946',
-  '생명과학': '#457b9d',
-  '지구과학': '#2d6a4f',
-}
 
 export default function Teachers() {
   return (
@@ -34,50 +27,90 @@ export default function Teachers() {
         </div>
 
         <section className="section">
-          <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-            <div className="grid-4">
-              {teachers.map(t => (
-                <div key={t.name + t.subject} className="card" style={{ textAlign: 'center' }}>
-                  <div style={{
-                    width: '80px', height: '80px',
-                    background: `linear-gradient(135deg, #1a1a2e, ${subjectColors[t.subject] || '#457b9d'})`,
-                    borderRadius: '50%', margin: '0 auto 1.2rem',
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    fontSize: '2rem'
-                  }}>{t.emoji}</div>
-                  <div style={{
-                    display: 'inline-block',
-                    background: subjectColors[t.subject] || '#457b9d',
-                    color: 'white', fontSize: '0.72rem', fontWeight: 700,
-                    padding: '0.2rem 0.7rem', borderRadius: '50px', marginBottom: '0.6rem'
-                  }}>{t.subject}</div>
-                  <h3 style={{ fontSize: '1rem', fontWeight: 700, marginBottom: '0.8rem' }}>{t.name}</h3>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
+          <div style={{ maxWidth: '760px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+            {teachers.map(t => (
+              <div key={t.name + t.subject} className="teacher-row">
+                <div className="teacher-photo">{t.emoji}</div>
+                <div className="teacher-info">
+                  <span className="teacher-subject">{t.subject}</span>
+                  <h3 className="teacher-name">{t.name}</h3>
+                  <div className="teacher-career">
                     {t.career.map(c => (
-                      <p key={c} style={{ fontSize: '0.8rem', color: 'var(--muted)', lineHeight: 1.6 }}>{c}</p>
+                      <p key={c}>{c}</p>
                     ))}
                   </div>
                 </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* 강사 채용 */}
-        <section className="section gray">
-          <div style={{ maxWidth: '700px', margin: '0 auto', textAlign: 'center' }}>
-            <div className="sec-label">Recruit</div>
-            <h2 className="sec-title">강사 채용</h2>
-            <p className="sec-desc" style={{ margin: '0 auto 2rem' }}>
-              열정 있는 과학 강사를 모집합니다.<br />
-              관심 있으신 분은 아래 연락처로 문의해 주세요.
-            </p>
-            <Link href="/contact" className="btn-primary">채용 문의하기</Link>
+              </div>
+            ))}
           </div>
         </section>
 
         <Footer />
       </div>
+
+      <style jsx>{`
+        .teacher-row {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+          background: #ffffff;
+          border: 1px solid #e5e5e5;
+          border-radius: 14px;
+          padding: 2rem 2.5rem;
+          transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+        .teacher-row:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 10px 28px rgba(0,0,0,0.10);
+          border-color: #bdbdbd;
+        }
+        .teacher-photo {
+          flex-shrink: 0;
+          width: 110px;
+          height: 110px;
+          border-radius: 50%;
+          background: linear-gradient(135deg, #6b6b6b, #3a3a3a);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 2.8rem;
+        }
+        .teacher-info {
+          flex: 1;
+          text-align: left;
+        }
+        .teacher-subject {
+          display: inline-block;
+          background: #757575;
+          color: #ffffff;
+          font-size: 0.72rem;
+          font-weight: 700;
+          padding: 0.25rem 0.8rem;
+          border-radius: 50px;
+          margin-bottom: 0.7rem;
+          letter-spacing: 0.05em;
+        }
+        .teacher-name {
+          font-size: 1.4rem;
+          font-weight: 700;
+          color: #222222;
+          margin: 0 0 0.7rem;
+        }
+        .teacher-career p {
+          font-size: 0.92rem;
+          color: #666666;
+          line-height: 1.7;
+          margin: 0;
+        }
+        @media (max-width: 600px) {
+          .teacher-row {
+            flex-direction: column;
+            text-align: center;
+            gap: 1.2rem;
+          }
+          .teacher-info { text-align: center; }
+        }
+      `}</style>
     </>
   )
 }
