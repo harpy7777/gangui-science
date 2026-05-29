@@ -29,7 +29,7 @@ export default function Contact() {
         </div>
 
         <section className="section">
-          <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'start' }}>
+          <div className="contact-grid" style={{ maxWidth: '1000px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'start' }}>
 
             {/* 연락처 정보 */}
             <div>
