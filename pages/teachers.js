@@ -30,7 +30,9 @@ export default function Teachers() {
           <div style={{ maxWidth: '760px', margin: '0 auto', padding: '3rem 0', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             {teachers.map(t => (
               <div key={t.name + t.subject} className="teacher-row">
-                <div className="teacher-photo">{t.emoji}</div>
+                <div className="teacher-photo">
+                  <img src={t.photo} alt={t.name} />
+                </div>
                 <div className="teacher-info">
                   <span className="teacher-subject">{t.subject}</span>
                   <h3 className="teacher-name">{t.name}</h3>
@@ -69,11 +71,13 @@ export default function Teachers() {
           width: 110px;
           height: 110px;
           border-radius: 50%;
-          background: linear-gradient(135deg, #6b6b6b, #3a3a3a);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 2.8rem;
+          overflow: hidden;
+          background: #e5e5e5;
+        }
+        .teacher-photo img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
         .teacher-info {
           flex: 1;
