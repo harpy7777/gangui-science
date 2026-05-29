@@ -40,13 +40,11 @@ export default function Results() {
           borderBottom: '1px solid var(--border)',
           overflow: 'hidden',
         }}>
-          <div style={{
+         <div style={{
             position: 'absolute', inset: 0,
             backgroundImage: 'url(/results-bg.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            filter: 'blur(4px)',
-            transform: 'scale(1.1)',
           }} />
           <div style={{ position: 'relative', zIndex: 1 }}>
             <h2 style={{ fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 900, color: '#555555', lineHeight: 1.4, marginBottom: '1rem' }}>
