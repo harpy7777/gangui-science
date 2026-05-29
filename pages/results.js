@@ -48,12 +48,11 @@ export default function Results() {
             filter: 'blur(4px)',
             transform: 'scale(1.1)',
           }} />
-          <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.5)' }} />
           <div style={{ position: 'relative', zIndex: 1 }}>
-            <h2 style={{ fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 900, color: '#ffffff', lineHeight: 1.4, marginBottom: '1rem' }}>
+            <h2 style={{ fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 900, color: '#555555', lineHeight: 1.4, marginBottom: '1rem' }}>
               결과로 증명된 입시 경쟁력
             </h2>
-            <p style={{ fontSize: 'clamp(0.95rem,2vw,1.15rem)', color: 'rgba(255,255,255,0.9)', fontWeight: 500 }}>
+            <p style={{ fontSize: 'clamp(0.95rem,2vw,1.15rem)', color: '#777777', fontWeight: 500 }}>
               합격은 우연이 아닌 전략의 결과입니다
             </p>
           </div>
