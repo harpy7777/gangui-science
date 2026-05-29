@@ -24,10 +24,13 @@ export default function Teachers() {
       <Navbar />
       <div className="page-wrap">
 
-        <div className="page-hero">
-          <div className="tag">Teachers</div>
-          <h1>전문 강사진</h1>
-          <p>각 과목 최고의 전문가들이 직접 가르칩니다</p>
+        <div className="page-hero" style={{ background: '#f8f9fa' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', justifyContent: 'center', marginBottom: '3.5rem' }}>
+            <div style={{ flex: 1, height: '1px', background: '#999999' }} />
+            <span style={{ fontSize: '1.1rem', fontWeight: 700, color: '#555555', letterSpacing: '0.14em', whiteSpace: 'nowrap' }}>Instructors</span>
+            <div style={{ flex: 1, height: '1px', background: '#999999' }} />
+          </div>
+          <p style={{ fontSize: '2.4rem', color: '#444444', fontWeight: 600 }}>과학 전문 강사진</p><br /><div className="sec-label" style={{ color: '#9E9E9E' }}>Science Admissions</div>
         </div>
 
         <section className="section">
