@@ -23,7 +23,7 @@ export default function Teachers() {
             <span style={{ fontSize: '1.1rem', fontWeight: 700, color: '#555555', letterSpacing: '0.14em', whiteSpace: 'nowrap' }}>Instructors</span>
             <div style={{ flex: 1, height: '1px', background: '#999999' }} />
           </div>
-          <p style={{ fontSize: '2.4rem', color: '#444444', fontWeight: 600 }}>과학 전문 강사진</p><br /><div className="sec-label" style={{ color: '#9E9E9E' }}>Science Admissions</div>
+          <p style={{ fontSize: '2.4rem', color: '#444444', fontWeight: 600 }}>과학 전문 강사진</p><br /><div className="sec-label" style={{ color: '#9E9E9E' }}>Science Admissions Instructors</div>
         </div>
 
         <section className="section">
