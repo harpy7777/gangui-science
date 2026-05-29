@@ -38,8 +38,8 @@ export default function Results() {
           padding: '5rem 6%', background: 'white', textAlign: 'center',
           borderBottom: '1px solid var(--border)'
         }}>
-          <h2 style={{ fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 900, color: '#212121', lineHeight: 1.4 }}>
-            결과로 증명된 입시 경쟁력
+          <h2 style={{ fontSize: 'clamp(1.4rem,3vw,3rem)', fontWeight: 900, color: '#212121', lineHeight: 1.4 }}>
+            결과로 증명된 입시 경쟁력 <br /> 합격은 우연이 아닌, 전략의 결과입니다
           </h2>
         </div>
 
