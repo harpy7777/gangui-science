@@ -52,7 +52,7 @@ export default function Results() {
             </h2>
             <p style={{ fontSize: 'clamp(1.4rem,3vw,2.7rem)', color: '#3a3a3a', fontWeight: 900, lineHeight: 1.4, marginBottom: '1.2rem' }}>
               합격은 우연이 아닌 전략의 결과입니다
-            </p>
+            </p><br />
             <div className="sec-label" style={{ color: '#777777', lineHeight: 1.8 }}>
               Proven Excellence in Admissions<br />
               Acceptance Is the Result of Strategy
