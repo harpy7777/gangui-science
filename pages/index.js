@@ -53,8 +53,7 @@ export default function Home() {
           ))}
         </div>
 
-        {/* CTA Banner */}
-     {/* CTA Banner */}
+       {/* CTA Banner */}
 <section style={{
   background: '#f8f9fa',
   padding: '7.5rem 6%', textAlign: 'center',
@@ -65,19 +64,30 @@ export default function Home() {
   </h2>
   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.8rem', justifyContent: 'center' }}>
     {['중등내신', '특목고 대비', '고등내신', '진로선택과목', '수능', '최상위 입시', '수행평가', '탐구활동 보고서'].map(item => (
-      <span key={item} style={{
-        border: '1px solid #999999',
-        borderRadius: '4px',
-        padding: '0.5rem 1.2rem',
-        fontSize: '0.9rem',
-        fontWeight: 600,
-        color: '#555555',
-        background: 'transparent',
-        minWidth: '120px',
-        textAlign: 'center',
-      }}>{item}</span>
+      <span key={item} className="cta-chip">{item}</span>
     ))}
   </div>
+
+  <style jsx>{`
+    .cta-chip {
+      border: 1px solid #999999;
+      border-radius: 4px;
+      padding: 0.5rem 1.2rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #555555;
+      background: transparent;
+      min-width: 120px;
+      text-align: center;
+      cursor: default;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+    .cta-chip:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+      border-color: #555555;
+    }
+  `}</style>
 </section>
 
         <Footer />
