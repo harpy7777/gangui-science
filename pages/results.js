@@ -65,9 +65,7 @@ export default function Results() {
           </section>
         ))}
 
-        <p style={{ textAlign: 'center', fontSize: '0.78rem', color: 'var(--muted)', padding: '1rem 0 2rem' }}>
-          * 합격자 동의 하에 게시됩니다. 실제 합격자 정보로 교체해 주세요.
-        </p>
+        
 
         <Footer />
       </div>
