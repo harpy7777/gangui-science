@@ -17,7 +17,7 @@ export default function Navbar() {
     { href: '/',         label: 'Home' },
     { href: '/about',    label: 'About Us' },
     { href: '/teachers', label: 'Instructors' },
-    { href: '/courses',  label: 'Programs' },
+    { href: '/courses',  label: 'Schedules' },
     { href: '/results',  label: 'Admission Results' },
     { href: '/notice',   label: 'Notice' },
   ]
