@@ -54,30 +54,31 @@ export default function Home() {
         </div>
 
         {/* CTA Banner */}
-        <section style={{
-          background: '#f8f9fa',
-          padding: '5rem 6%', textAlign: 'center',
-        }}>
-          <h2 style={{ fontSize: 'clamp(1.3rem,3vw,1.9rem)', fontWeight: 900, color: '#212121', lineHeight: 1.6, marginBottom: '3rem' }}>
-            내신 만점에서 수능 1등급까지<br />
-            결과로 증명하는 과학 전문 커리큘럼
-          </h2>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.8rem', justifyContent: 'center' }}>
-            {['중등내신', '특목고 대비', '고등내신', '진로선택과목', '수능', '최상위 입시', '수행평가', '탐구활동 보고서'].map(item => (
-              <span key={item} style={{
-                border: '1px solid #999999',
-                borderRadius: '4px',
-                padding: '0.5rem 1.2rem',
-                fontSize: '0.9rem',
-                fontWeight: 600,
-                color: '#555555',
-                background: 'transparent',
-                minWidth: '120px',
-                textAlign: 'center',
-              }}>{item}</span>
-            ))}
-          </div>
-        </section>
+       {/* CTA Banner */}
+<section style={{
+  background: '#f8f9fa',
+  padding: '7.5rem 6%', textAlign: 'center',
+}}>
+  <h2 style={{ fontSize: 'clamp(1.7rem,3.6vw,2.5rem)', fontWeight: 900, color: '#212121', lineHeight: 1.6, marginBottom: '3.5rem' }}>
+    내신 만점에서 수능 1등급까지<br />
+    결과로 증명하는 과학 전문 커리큘럼
+  </h2>
+  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.8rem', justifyContent: 'center' }}>
+    {['중등내신', '특목고 대비', '고등내신', '진로선택과목', '수능', '최상위 입시', '수행평가', '탐구활동 보고서'].map(item => (
+      <span key={item} style={{
+        border: '1px solid #999999',
+        borderRadius: '4px',
+        padding: '0.5rem 1.2rem',
+        fontSize: '0.9rem',
+        fontWeight: 600,
+        color: '#555555',
+        background: 'transparent',
+        minWidth: '120px',
+        textAlign: 'center',
+      }}>{item}</span>
+    ))}
+  </div>
+</section>
 
         <Footer />
       </div>
