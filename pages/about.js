@@ -29,9 +29,9 @@ export default function About() {
           <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,255,255,0.88)' }} />
           <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 1 }}>
            <p className="sec-desc" style={{ margin: '0 auto 2rem', fontSize: '1.4rem', lineHeight: 2 }}>
-              결국 성적은, 얼마나 깊이 이해했는가에서 결정됩니다.<br /><br /><br />
-              강의하는 아이들은 과학을 '외우는 과목'이 아닌 '이해하는 과목'으로 바꾸는 공간입니다.<br /><br /><br />
-              체계적인 커리큘럼, 과목별 전문 강사진, 학생 개개인에 대한 밀도 높은 관리<br /><br /><br />
+              결국 성적은, 얼마나 깊이 이해했는가에서 결정됩니다.<br /><br />
+              강의하는 아이들은 과학을 '외우는 과목'이 아닌 '이해하는 과목'으로 바꾸는 공간입니다.<br /><br />
+              체계적인 커리큘럼, 과목별 전문 강사진, 학생 개개인에 대한 밀도 높은 관리<br /><br />
               그 결과로 내신과 수능 모두에서 흔들리지 않는 실력을 완성합니다.<br /><br /><br />
             </p>
             <p style={{ fontSize: '2.4rem', fontWeight: 600, color: '#333333', lineHeight: 1.9, marginTop: '1rem' }}>
