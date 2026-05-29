@@ -19,10 +19,13 @@ export default function Contact() {
       <Navbar />
       <div className="page-wrap">
 
-        <div className="page-hero">
-          <div className="tag">Contact</div>
-          <h1>상담 문의</h1>
-          <p>궁금한 점이 있으시면 편하게 연락주세요</p>
+        <div className="page-hero" style={{ background: '#f8f9fa' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', justifyContent: 'center', marginBottom: '3.5rem' }}>
+            <div style={{ flex: 1, height: '1px', background: '#999999' }} />
+            <span style={{ fontSize: '1.1rem', fontWeight: 700, color: '#555555', letterSpacing: '0.14em', whiteSpace: 'nowrap' }}>Contact Us</span>
+            <div style={{ flex: 1, height: '1px', background: '#999999' }} />
+          </div>
+          <p style={{ fontSize: '2.4rem', color: '#444444', fontWeight: 600 }}>상담 문의</p><br /><div className="sec-label" style={{ color: '#9E9E9E' }}>Consultation Inquiry</div>
         </div>
 
         <section className="section">
