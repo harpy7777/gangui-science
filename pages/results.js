@@ -65,7 +65,7 @@ export default function Results() {
           <section key={year} className={year === years[0] ? 'section' : 'section gray'}>
             <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
               <div className="sec-label" style={{ color: '#9E9E9E' }}>Admission Results</div>
-              <h2 className="sec-title">{year}학년도 합격 현황</h2>
+              <h2 className="sec-title">{year}학년도 합격 현황</h2><br />
               <div className="grid-3" style={{ marginTop: '2rem' }}>
                 {results.filter(r => r.year === year).map((r, i) => (
                   <div key={i} className="result-card">
@@ -79,9 +79,7 @@ export default function Results() {
           </section>
         ))}
 
-        <p style={{ textAlign: 'center', fontSize: '0.78rem', color: 'var(--muted)', padding: '1rem 0 2rem' }}>
-          * 합격자 동의 하에 게시됩니다. 실제 합격자 정보로 교체해 주세요.
-        </p>
+       
 
         <Footer />
       </div>
