@@ -35,12 +35,22 @@ export default function Results() {
 
         {/* 강조 문구 */}
         <div style={{
-          padding: '5rem 6%', background: 'white', textAlign: 'center',
-          borderBottom: '1px solid var(--border)'
+          position: 'relative',
+          padding: '7rem 6%', textAlign: 'center',
+          borderBottom: '1px solid var(--border)',
+          backgroundImage: 'url(/results-bg.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
         }}>
-          <h2 style={{ fontSize: 'clamp(1.4rem,3vw,2.2rem)', fontWeight: 900, color: '#777777', lineHeight: 1.4 }}>
-            결과로 증명된 입시 경쟁력 <br /> 합격은 우연이 아닌 전략의 결과입니다
-          </h2>
+          <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.5)' }} />
+          <div style={{ position: 'relative', zIndex: 1 }}>
+            <h2 style={{ fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 900, color: '#ffffff', lineHeight: 1.4, marginBottom: '1rem' }}>
+              결과로 증명된 입시 경쟁력
+            </h2>
+            <p style={{ fontSize: 'clamp(0.95rem,2vw,1.15rem)', color: 'rgba(255,255,255,0.9)', fontWeight: 500 }}>
+              합격은 우연이 아닌 전략의 결과입니다
+            </p>
+          </div>
         </div>
 
         {/* 연도별 합격 */}
@@ -48,7 +58,7 @@ export default function Results() {
           <section key={year} className={year === years[0] ? 'section' : 'section gray'}>
             <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
               <div className="sec-label" style={{ color: '#9E9E9E' }}>Admission Results</div>
-              <h2 className="sec-title">{year}학년도 합격 현황</h2><br /><br />
+              <h2 className="sec-title">{year}학년도 합격 현황</h2>
               <div className="grid-3" style={{ marginTop: '2rem' }}>
                 {results.filter(r => r.year === year).map((r, i) => (
                   <div key={i} className="result-card">
@@ -62,7 +72,9 @@ export default function Results() {
           </section>
         ))}
 
-        
+        <p style={{ textAlign: 'center', fontSize: '0.78rem', color: 'var(--muted)', padding: '1rem 0 2rem' }}>
+          * 합격자 동의 하에 게시됩니다. 실제 합격자 정보로 교체해 주세요.
+        </p>
 
         <Footer />
       </div>
