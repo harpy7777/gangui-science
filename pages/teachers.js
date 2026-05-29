@@ -66,19 +66,20 @@ export default function Teachers() {
           box-shadow: 0 10px 28px rgba(0,0,0,0.10);
           border-color: #bdbdbd;
         }
-        .teacher-photo {
-          flex-shrink: 0;
-          width: 110px;
-          height: 110px;
-          border-radius: 50%;
-          overflow: hidden;
-          background: #e5e5e5;
-        }
-        .teacher-photo img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
+       .teacher-photo {
+  flex-shrink: 0;
+  width: 150px;
+  height: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #e5e5e5;
+}
+.teacher-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
         .teacher-info {
           flex: 1;
           text-align: left;
