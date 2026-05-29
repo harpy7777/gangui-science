@@ -47,13 +47,13 @@ export default function Results() {
             backgroundPosition: 'center',
           }} />
           <div style={{ position: 'relative', zIndex: 1 }}>
-            <h2 style={{ fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 900, color: '#3a3a3a', lineHeight: 1.4, marginBottom: '1rem' }}>
+            <h2 style={{ fontSize: 'clamp(1.4rem,3vw,2.3rem)', fontWeight: 900, color: '#3a3a3a', lineHeight: 1.4, marginBottom: '1rem' }}>
               결과로 증명된 입시 경쟁력
             </h2>
-            <p style={{ fontSize: 'clamp(1.4rem,3vw,2rem)', color: '#3a3a3a', fontWeight: 900, lineHeight: 1.4, marginBottom: '1.2rem' }}>
+            <p style={{ fontSize: 'clamp(1.4rem,3vw,2.3rem)', color: '#3a3a3a', fontWeight: 900, lineHeight: 1.4, marginBottom: '1.2rem' }}>
               합격은 우연이 아닌 전략의 결과입니다
             </p>
-            <div className="sec-label" style={{ color: '#9E9E9E', lineHeight: 1.8 }}>
+            <div className="sec-label" style={{ color: '#777777', lineHeight: 1.8 }}>
               Proven Excellence in Admissions<br />
               Acceptance Is the Result of Strategy
             </div>
