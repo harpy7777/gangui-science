@@ -34,7 +34,7 @@ export default function About() {
               체계적인 커리큘럼, 과목별 전문 강사진, 학생 개개인에 대한 밀도 높은 관리<br /><br /><br />
               그 결과로 내신과 수능 모두에서 흔들리지 않는 실력을 완성합니다.<br /><br /><br />
             </p>
-            <p style={{ fontSize: '1.5rem', fontWeight: 600, color: '#333333', lineHeight: 1.9, marginTop: '1rem' }}>
+            <p style={{ fontSize: '2.4rem', fontWeight: 600, color: '#333333', lineHeight: 1.9, marginTop: '1rem' }}>
               내신부터 수능까지 결과로 증명하는 과학 교육<br /><br />
             </p>
           </div>
