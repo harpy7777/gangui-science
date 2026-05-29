@@ -54,12 +54,12 @@ export default function Home() {
         </div>
 
         {/* CTA Banner */}
-       {/* CTA Banner */}
+     {/* CTA Banner */}
 <section style={{
   background: '#f8f9fa',
   padding: '7.5rem 6%', textAlign: 'center',
 }}>
-  <h2 style={{ fontSize: 'clamp(1.7rem,3.6vw,2.5rem)', fontWeight: 900, color: '#212121', lineHeight: 1.6, marginBottom: '3.5rem' }}>
+  <h2 style={{ fontSize: 'clamp(1.7rem,3.6vw,2.5rem)', fontWeight: 900, color: '#212121', lineHeight: 1.6, marginBottom: '5rem' }}>
     내신 만점에서 수능 1등급까지<br />
     결과로 증명하는 과학 전문 커리큘럼
   </h2>
