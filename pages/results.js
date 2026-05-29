@@ -33,22 +33,14 @@ export default function Results() {
           <p style={{ fontSize: '2.4rem', color: '#444444', fontWeight: 600 }}>대학 입시 실적</p><br /><div className="sec-label" style={{ color: '#9E9E9E' }}>University Admissions Results</div>
         </div>
 
-        {/* Stats */}
+        {/* 강조 문구 */}
         <div style={{
-          display: 'grid', gridTemplateColumns: 'repeat(3,1fr)',
-          padding: '2.5rem 6%', background: 'white',
-          borderBottom: '1px solid var(--border)', gap: '1rem'
+          padding: '5rem 6%', background: 'white', textAlign: 'center',
+          borderBottom: '1px solid var(--border)'
         }}>
-          {[
-            { n: '97%', l: '재수강률' },
-            { n: '4.9점', l: '평균 만족도 (5점 만점)' },
-            { n: '15년+', l: '교육 경험' },
-          ].map(s => (
-            <div key={s.l} style={{ textAlign: 'center' }}>
-              <div style={{ fontFamily: 'Montserrat,sans-serif', fontSize: '2.2rem', fontWeight: 900, color: '#e63946', lineHeight: 1, marginBottom: '0.4rem' }}>{s.n}</div>
-              <div style={{ fontSize: '0.82rem', color: 'var(--muted)' }}>{s.l}</div>
-            </div>
-          ))}
+          <h2 style={{ fontSize: 'clamp(2rem,4.5vw,3rem)', fontWeight: 900, color: '#212121', lineHeight: 1.4 }}>
+            결과로 증명된 입시 경쟁력
+          </h2>
         </div>
 
         {/* 연도별 합격 */}
