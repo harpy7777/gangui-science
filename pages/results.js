@@ -24,10 +24,13 @@ export default function Results() {
       <Navbar />
       <div className="page-wrap">
 
-        <div className="page-hero">
-          <div className="tag">Results</div>
-          <h1>합격 실적</h1>
-          <p>체계적인 교육으로 이뤄낸 우수한 대입 성과</p>
+        <div className="page-hero" style={{ background: '#f8f9fa' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', justifyContent: 'center', marginBottom: '3.5rem' }}>
+            <div style={{ flex: 1, height: '1px', background: '#999999' }} />
+            <span style={{ fontSize: '1.1rem', fontWeight: 700, color: '#555555', letterSpacing: '0.14em', whiteSpace: 'nowrap' }}>Admissions Results</span>
+            <div style={{ flex: 1, height: '1px', background: '#999999' }} />
+          </div>
+          <p style={{ fontSize: '2.4rem', color: '#444444', fontWeight: 600 }}>대학 입시 실적</p><br /><div className="sec-label" style={{ color: '#9E9E9E' }}>University Admissions Results</div>
         </div>
 
         {/* Stats */}
@@ -73,15 +76,6 @@ export default function Results() {
         <p style={{ textAlign: 'center', fontSize: '0.78rem', color: 'var(--muted)', padding: '1rem 0 2rem' }}>
           * 합격자 동의 하에 게시됩니다. 실제 합격자 정보로 교체해 주세요.
         </p>
-
-        {/* CTA */}
-        <section style={{ background: 'var(--accent)', padding: '3rem 6%', textAlign: 'center' }}>
-          <h2 style={{ color: 'white', fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem' }}>다음 합격자는 우리 학생입니다</h2>
-          <Link href="/contact" style={{
-            display: 'inline-block', background: 'white', color: 'var(--accent)',
-            padding: '0.85rem 2.2rem', borderRadius: '6px', fontWeight: 700
-          }}>무료 상담 신청 →</Link>
-        </section>
 
         <Footer />
       </div>
