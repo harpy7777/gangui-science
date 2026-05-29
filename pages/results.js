@@ -38,26 +38,23 @@ export default function Results() {
           padding: '5rem 6%', background: 'white', textAlign: 'center',
           borderBottom: '1px solid var(--border)'
         }}>
-          <h2 style={{ fontSize: 'clamp(1.4rem,3vw,3rem)', fontWeight: 900, color: '#212121', lineHeight: 1.4 }}>
-            결과로 증명된 입시 경쟁력 <br /> 합격은 우연이 아닌, 전략의 결과입니다
+          <h2 style={{ fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 900, color: '#212121', lineHeight: 1.4 }}>
+            결과로 증명된 입시 경쟁력
           </h2>
         </div>
 
         {/* 연도별 합격 */}
         {years.map(year => (
           <section key={year} className={year === years[0] ? 'section' : 'section gray'}>
-            <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-              <div className="sec-label">Admission Results</div>
+            <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
+              <div className="sec-label" style={{ color: '#9E9E9E' }}>Admission Results</div>
               <h2 className="sec-title">{year}학년도 합격 현황</h2>
               <div className="grid-3" style={{ marginTop: '2rem' }}>
                 {results.filter(r => r.year === year).map((r, i) => (
-                  <div key={i} style={{
-                    background: 'linear-gradient(135deg, #1a1a2e, #0f3460)',
-                    borderRadius: '12px', padding: '1.8rem', color: 'white'
-                  }}>
-                    <div style={{ fontSize: '1.05rem', fontWeight: 900, marginBottom: '0.4rem' }}>{r.univ}</div>
-                    <div style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.65)', marginBottom: '1rem' }}>{r.dept}</div>
-                    <div style={{ fontSize: '0.82rem', color: '#e63946', fontWeight: 600 }}>{r.name}</div>
+                  <div key={i} className="result-card">
+                    <div style={{ fontSize: '1.05rem', fontWeight: 900, marginBottom: '0.4rem', color: '#222222' }}>{r.univ}</div>
+                    <div style={{ fontSize: '0.85rem', color: '#777777', marginBottom: '1rem' }}>{r.dept}</div>
+                    <div style={{ fontSize: '0.82rem', color: '#555555', fontWeight: 600 }}>{r.name}</div>
                   </div>
                 ))}
               </div>
@@ -65,10 +62,28 @@ export default function Results() {
           </section>
         ))}
 
-        
+        <p style={{ textAlign: 'center', fontSize: '0.78rem', color: 'var(--muted)', padding: '1rem 0 2rem' }}>
+          * 합격자 동의 하에 게시됩니다. 실제 합격자 정보로 교체해 주세요.
+        </p>
 
         <Footer />
       </div>
+
+      <style jsx>{`
+        .result-card {
+          background: #f5f5f5;
+          border: 1px solid #e5e5e5;
+          border-radius: 12px;
+          padding: 1.8rem;
+          text-align: center;
+          transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+        .result-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+          border-color: #bdbdbd;
+        }
+      `}</style>
     </>
   )
 }
