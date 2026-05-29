@@ -67,10 +67,13 @@ export default function Courses() {
       <Navbar />
       <div className="page-wrap">
 
-        <div className="page-hero">
-          <div className="tag">Courses</div>
-          <h1>수업 과정 안내</h1>
-          <p>학년과 목표에 맞는 최적의 과정을 선택하세요</p>
+        <div className="page-hero" style={{ background: '#f8f9fa' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', justifyContent: 'center', marginBottom: '3.5rem' }}>
+            <div style={{ flex: 1, height: '1px', background: '#999999' }} />
+            <span style={{ fontSize: '1.1rem', fontWeight: 700, color: '#555555', letterSpacing: '0.14em', whiteSpace: 'nowrap' }}>Schedule</span>
+            <div style={{ flex: 1, height: '1px', background: '#999999' }} />
+          </div>
+          <p style={{ fontSize: '2.4rem', color: '#444444', fontWeight: 600 }}>수업 과정 안내</p><br /><div className="sec-label" style={{ color: '#9E9E9E' }}>Curriculum Overview</div>
         </div>
 
         <section className="section">
@@ -99,29 +102,6 @@ export default function Courses() {
               ))}
             </div>
           </div>
-        </section>
-
-        {/* 수강료 안내 */}
-        <section className="section gray">
-          <div style={{ maxWidth: '700px', margin: '0 auto', textAlign: 'center' }}>
-            <div className="sec-label">Tuition</div>
-            <h2 className="sec-title">수강료 안내</h2>
-            <p className="sec-desc" style={{ margin: '0 auto 2rem' }}>
-              수강료는 과정별, 학년별로 상이합니다.<br />
-              정확한 금액은 상담 후 안내드립니다.
-            </p>
-            <Link href="/contact" className="btn-primary">수강료 문의하기</Link>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section style={{ background: 'var(--accent)', padding: '3rem 6%', textAlign: 'center' }}>
-          <h2 style={{ color: 'white', fontSize: '1.5rem', fontWeight: 900, marginBottom: '1rem' }}>어떤 과정이 맞는지 모르겠다면?</h2>
-          <p style={{ color: 'rgba(255,255,255,0.85)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>전문 강사가 학생 수준에 맞는 과정을 추천해드립니다.</p>
-          <Link href="/contact" style={{
-            display: 'inline-block', background: 'white', color: 'var(--accent)',
-            padding: '0.85rem 2.2rem', borderRadius: '6px', fontWeight: 700
-          }}>무료 상담 신청 →</Link>
         </section>
 
         <Footer />
