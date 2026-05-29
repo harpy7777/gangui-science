@@ -27,7 +27,7 @@ export default function Teachers() {
         </div>
 
         <section className="section">
-          <div style={{ maxWidth: '760px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          <div style={{ maxWidth: '760px', margin: '0 auto', padding: '3rem 0', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             {teachers.map(t => (
               <div key={t.name + t.subject} className="teacher-row">
                 <div className="teacher-photo">{t.emoji}</div>
