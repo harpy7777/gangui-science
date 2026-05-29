@@ -4,7 +4,9 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 const teachers = [
-  { photo: '/teacher1.jpg', name: '강사 이름', subject: '물리', career: ['경력 및 학력을 여기에 입력해 주세요'] },
+  { photo: '/teacher1.jpg', name: '강사 이름', subject: '물리', career: ['19년 이상의 입시 경험
+목동 주요 중·고교 내신 및 수능 분석 전문가
+최상위권 결과로 실력을 증명해온 과학 전문 강사'] },
   { photo: '/teacher2.jpg', name: '김인후 선생님', subject: '통합과학, 화학 전문', career: ['경력 및 학력을 여기에 입력해 주세요'] },
   { photo: '/teacher3.jpg', name: '강사 이름', subject: '생명과학', career: ['경력 및 학력을 여기에 입력해 주세요'] },
   { photo: '/teacher4.jpg', name: '강사 이름', subject: '지구과학', career: ['경력 및 학력을 여기에 입력해 주세요'] },
