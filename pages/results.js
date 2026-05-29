@@ -38,10 +38,16 @@ export default function Results() {
           position: 'relative',
           padding: '7rem 6%', textAlign: 'center',
           borderBottom: '1px solid var(--border)',
-          backgroundImage: 'url(/results-bg.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          overflow: 'hidden',
         }}>
+          <div style={{
+            position: 'absolute', inset: 0,
+            backgroundImage: 'url(/results-bg.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: 'blur(4px)',
+            transform: 'scale(1.1)',
+          }} />
           <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.5)' }} />
           <div style={{ position: 'relative', zIndex: 1 }}>
             <h2 style={{ fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 900, color: '#ffffff', lineHeight: 1.4, marginBottom: '1rem' }}>
