@@ -54,6 +54,7 @@ export default function Teachers() {
         .teacher-row {
           display: flex;
           align-items: center;
+          justify-content: center;
           gap: 2rem;
           background: #ffffff;
           border: 1px solid #e5e5e5;
@@ -66,22 +67,21 @@ export default function Teachers() {
           box-shadow: 0 10px 28px rgba(0,0,0,0.10);
           border-color: #bdbdbd;
         }
-       .teacher-photo {
-  flex-shrink: 0;
-  width: 150px;
-  height: 180px;
-  border-radius: 12px;
-  overflow: hidden;
-  background: #e5e5e5;
-}
-.teacher-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-}
+        .teacher-photo {
+          flex-shrink: 0;
+          width: 150px;
+          height: 180px;
+          border-radius: 12px;
+          overflow: hidden;
+          background: #e5e5e5;
+        }
+        .teacher-photo img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center top;
+        }
         .teacher-info {
-          flex: 1;
           text-align: left;
         }
         .teacher-subject {
