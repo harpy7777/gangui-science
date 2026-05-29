@@ -54,12 +54,11 @@ export default function Teachers() {
         .teacher-row {
           display: flex;
           align-items: center;
-          justify-content: center;
-          gap: 2rem;
+          gap: 3.5rem;
           background: #ffffff;
           border: 1px solid #e5e5e5;
           border-radius: 14px;
-          padding: 2rem 2.5rem;
+          padding: 2rem 3rem;
           transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
         }
         .teacher-row:hover {
