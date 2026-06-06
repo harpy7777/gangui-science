@@ -96,7 +96,7 @@ export default function About() {
           </div>
 
           {/* 6가지 방법 */}
-          <div style={{ textAlign: 'center', marginTop: '5rem', marginBottom: '3rem' }}>
+         <div style={{ textAlign: 'center', marginTop: '8rem', marginBottom: '3rem' }}>
             <h2 className="sec-title">6가지 관리 시스템</h2>
             <div className="sec-label" style={{ color: '#9E9E9E' }}>6 Management Systems for Student Retention<br /></div>
           </div>
