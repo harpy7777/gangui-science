@@ -172,8 +172,14 @@ export default function About() {
             ))}
           </div>
 
+          {/* 과정을 관리하는 과학 학습 */}
+          <div style={{ textAlign: 'center', marginTop: '8rem', marginBottom: '3rem' }}>
+            <h2 className="sec-title">과정을 관리하는 과학 학습</h2>
+            <div className="sec-label" style={{ color: '#9E9E9E' }}>Process-Based Learning System<br /></div>
+          </div>
+
           {/* 데이터 관리형 학원 소개 (세로 카드 3개) */}
-          <div style={{ maxWidth: '900px', margin: '8rem auto 0', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          <div style={{ maxWidth: '900px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
 
             {/* 01 */}
             <div className="card" style={{ padding: '2.4rem 2.6rem', textAlign: 'center' }}>
