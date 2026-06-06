@@ -97,8 +97,8 @@ export default function About() {
 
           {/* 6가지 방법 */}
           <div style={{ textAlign: 'center', marginTop: '5rem', marginBottom: '3rem' }}>
-            <h2 className="sec-title">6가지 방법</h2>
-            <div className="sec-label" style={{ color: '#9E9E9E' }}>Six Methods<br /></div>
+            <h2 className="sec-title">학생을 놓치지 않는 6가지 관리 시스템</h2>
+            <div className="sec-label" style={{ color: '#9E9E9E' }}>6 Management Systems for Student Retention<br /></div>
           </div>
           <div className="grid-3" style={{ maxWidth: '900px', margin: '0 auto' }}>
             {[
@@ -109,8 +109,8 @@ export default function About() {
                   </svg>
                 ),
                 sub: 'STEP 01',
-                title: '개념 이해',
-                desc: '원리부터 차근차근 짚어주는\n개념 중심 수업을 진행합니다.'
+                title: '개별 학습 데이터 관리',
+                desc: '문제 풀이 및 학습 데이터를 기반으로\n학생별 취약 단원을 정밀 분석·관리합니다.'
               },
               {
                 icon: (
@@ -120,7 +120,7 @@ export default function About() {
                 ),
                 sub: 'STEP 02',
                 title: '반복 학습',
-                desc: '단계별 복습 루틴으로\n배운 내용을 완전히 정착시킵니다.'
+                desc: '출결부터 취약 단원까지\n한눈에 보이는 자동화 리포트로 제공합니다.'
               },
               {
                 icon: (
@@ -129,8 +129,8 @@ export default function About() {
                   </svg>
                 ),
                 sub: 'STEP 03',
-                title: '1:1 질의응답',
-                desc: '모르는 부분은 그때그때\n개별 질의응답으로 해결합니다.'
+                title: '맞춤 문제 자동 구성',
+                desc: '학교별 출제 경향과 학생 맞춤형 난이도를 반영하여\n취약 유형과 오답을 집중 훈련합니다.'
               },
               {
                 icon: (
@@ -139,8 +139,8 @@ export default function About() {
                   </svg>
                 ),
                 sub: 'STEP 04',
-                title: '성취도 평가',
-                desc: '정기 테스트로 학습 수준을\n객관적으로 점검합니다.'
+                title: '수행·탐구 관리',
+                desc: '학종 대비를 위해 수행평가와 탐구 활동을\n과정 중심으로 체계적으로 관리합니다.'
               },
               {
                 icon: (
@@ -149,8 +149,8 @@ export default function About() {
                   </svg>
                 ),
                 sub: 'STEP 05',
-                title: '오답 클리닉',
-                desc: '틀린 문제를 다시 풀게 하여\n취약점을 끝까지 보완합니다.'
+                title: '누적 성장 추적',
+                desc: '성적 변화의 과정을\n그래프로 한눈에 확인할 수 있습니다.'
               },
               {
                 icon: (
@@ -159,8 +159,8 @@ export default function About() {
                   </svg>
                 ),
                 sub: 'STEP 06',
-                title: '학부모 소통',
-                desc: '정기 리포트로 학습 현황을\n학부모님과 투명하게 공유합니다.'
+                title: '관리 자동화',
+                desc: '과제 및 오답 자동 추적으로\n완벽한 관리 구조를 만듭니다.'
               },
             ].map(m => (
               <div key={m.title} className="card" style={{ display: 'block', textAlign: 'center', padding: '2.5rem 1.8rem' }}>
