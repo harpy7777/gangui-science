@@ -171,6 +171,66 @@ export default function About() {
               </div>
             ))}
           </div>
+
+          {/* 데이터 관리형 학원 소개 (세로 카드 3개) */}
+          <div style={{ maxWidth: '900px', margin: '8rem auto 0', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+
+            {/* 01 */}
+            <div className="card" style={{ padding: '2.4rem 2.6rem', textAlign: 'left' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', marginBottom: '1rem' }}>
+                <span style={{ width: '34px', height: '34px', borderRadius: '50%', border: '1px solid #9E9E9E', color: '#9E9E9E', fontSize: '0.85rem', fontWeight: 700, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>01</span>
+                <div style={{ flex: 1, height: '1px', background: '#e5e5e5' }} />
+              </div>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: '#222222', lineHeight: 1.6, marginBottom: '0.9rem' }}>
+                과학을 잘 가르치는 곳을 넘어,<br />데이터로 관리하는 학원입니다.
+              </h3>
+              <p style={{ fontSize: '0.95rem', color: 'var(--muted)', lineHeight: 1.9, margin: 0 }}>
+                학생의 학습 과정이 기록되고, 분석되며, 누적으로 관리됩니다.<br />
+                점수 하나가 아니라 성장의 흐름 전체를 들여다봅니다.
+              </p>
+            </div>
+
+            {/* 02 */}
+            <div className="card" style={{ padding: '2.4rem 2.6rem', textAlign: 'left' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', marginBottom: '1rem' }}>
+                <span style={{ width: '34px', height: '34px', borderRadius: '50%', border: '1px solid #9E9E9E', color: '#9E9E9E', fontSize: '0.85rem', fontWeight: 700, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>02</span>
+                <span style={{ fontSize: '0.78rem', fontWeight: 600, color: '#9E9E9E', letterSpacing: '0.12em' }}>WHY IT MATTERS</span>
+                <div style={{ flex: 1, height: '1px', background: '#e5e5e5' }} />
+              </div>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: '#222222', lineHeight: 1.6, marginBottom: '0.9rem' }}>
+                자동화의 진짜 목적은 수업 집중입니다.
+              </h3>
+              <p style={{ fontSize: '0.95rem', color: 'var(--muted)', lineHeight: 1.9, marginBottom: '1.4rem' }}>
+                반복되는 행정 업무를 시스템이 떠맡는 동안, 선생님은 학생 지도에 더 많은 시간을 씁니다.<br />
+                그 결과는 개별 피드백의 밀도로 돌아옵니다.
+              </p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem' }}>
+                {['행정 부담 ↓', '피드백 밀도 ↑', '지도 시간 ↑'].map(t => (
+                  <span key={t} style={{ fontSize: '0.85rem', fontWeight: 600, color: '#555555', background: '#f4f4f4', borderRadius: '999px', padding: '0.5rem 1.1rem' }}>{t}</span>
+                ))}
+              </div>
+            </div>
+
+            {/* 03 */}
+            <div className="card" style={{ padding: '2.4rem 2.6rem', textAlign: 'left' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', marginBottom: '1rem' }}>
+                <span style={{ width: '34px', height: '34px', borderRadius: '50%', border: '1px solid #9E9E9E', color: '#9E9E9E', fontSize: '0.85rem', fontWeight: 700, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>03</span>
+                <span style={{ fontSize: '0.78rem', fontWeight: 600, color: '#9E9E9E', letterSpacing: '0.12em' }}>OUR POSITION</span>
+                <div style={{ flex: 1, height: '1px', background: '#e5e5e5' }} />
+              </div>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: '#222222', lineHeight: 1.6, marginBottom: '0.9rem' }}>
+                과학 + 데이터 관리 + 입시 전략 + 개별 추적
+              </h3>
+              <p style={{ fontSize: '0.95rem', color: 'var(--muted)', lineHeight: 1.9, marginBottom: '1.4rem' }}>
+                단순히 잘 가르치는 학원에서 멈추지 않습니다.<br />
+                학습의 시작부터 결과까지, 데이터로 이어지는 한 흐름으로 우리 아이를 책임집니다.
+              </p>
+              <div style={{ borderTop: '1px solid #e5e5e5', paddingTop: '1.2rem', fontSize: '1.05rem', fontWeight: 700, color: '#333333' }}>
+                데이터 기반 추적 관리형 과학 전문관입니다
+              </div>
+            </div>
+
+          </div>
         </section>
 
         <Footer />
