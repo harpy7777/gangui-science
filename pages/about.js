@@ -94,6 +94,83 @@ export default function About() {
               </Link>
             ))}
           </div>
+
+          {/* 6가지 방법 */}
+          <div style={{ textAlign: 'center', marginTop: '5rem', marginBottom: '3rem' }}>
+            <h2 className="sec-title">6가지 방법</h2>
+            <div className="sec-label" style={{ color: '#9E9E9E' }}>Six Methods<br /></div>
+          </div>
+          <div className="grid-3" style={{ maxWidth: '900px', margin: '0 auto' }}>
+            {[
+              {
+                icon: (
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#9E9E9E" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M9.5 2a4.5 4.5 0 0 0-4.5 4.5c0 1.4.6 2.6 1.5 3.5.6.6 1 1.4 1 2.3V14h4v-1.7c0-.9.4-1.7 1-2.3.9-.9 1.5-2.1 1.5-3.5A4.5 4.5 0 0 0 9.5 2z"/><line x1="7.5" y1="18" x2="11.5" y2="18"/><line x1="8" y1="21" x2="11" y2="21"/>
+                  </svg>
+                ),
+                sub: 'STEP 01',
+                title: '개념 이해',
+                desc: '원리부터 차근차근 짚어주는\n개념 중심 수업을 진행합니다.'
+              },
+              {
+                icon: (
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#9E9E9E" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 12a9 9 0 1 0 9-9 9 9 0 0 0-6.4 2.6"/><polyline points="3 4 3 8 7 8"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="12" x2="15" y2="14"/>
+                  </svg>
+                ),
+                sub: 'STEP 02',
+                title: '반복 학습',
+                desc: '단계별 복습 루틴으로\n배운 내용을 완전히 정착시킵니다.'
+              },
+              {
+                icon: (
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#9E9E9E" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="12" x2="13" y2="12"/>
+                  </svg>
+                ),
+                sub: 'STEP 03',
+                title: '1:1 질의응답',
+                desc: '모르는 부분은 그때그때\n개별 질의응답으로 해결합니다.'
+              },
+              {
+                icon: (
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#9E9E9E" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                  </svg>
+                ),
+                sub: 'STEP 04',
+                title: '성취도 평가',
+                desc: '정기 테스트로 학습 수준을\n객관적으로 점검합니다.'
+              },
+              {
+                icon: (
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#9E9E9E" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/><line x1="9" y1="18" x2="13" y2="18"/><circle cx="11" cy="11.5" r="0.6" fill="#9E9E9E"/>
+                  </svg>
+                ),
+                sub: 'STEP 05',
+                title: '오답 클리닉',
+                desc: '틀린 문제를 다시 풀게 하여\n취약점을 끝까지 보완합니다.'
+              },
+              {
+                icon: (
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#9E9E9E" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                ),
+                sub: 'STEP 06',
+                title: '학부모 소통',
+                desc: '정기 리포트로 학습 현황을\n학부모님과 투명하게 공유합니다.'
+              },
+            ].map(m => (
+              <div key={m.title} className="card" style={{ display: 'block', textAlign: 'center', padding: '2.5rem 1.8rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1.2rem' }}>{m.icon}</div>
+                <div style={{ fontSize: '0.82rem', color: '#9E9E9E', fontWeight: 500, marginBottom: '0.3rem' }}>{m.sub}</div>
+                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.7rem', color: '#222222' }}>{m.title}</h3>
+                <p style={{ fontSize: '0.85rem', color: 'var(--muted)', lineHeight: 1.7, whiteSpace: 'pre-line' }}>{m.desc}</p>
+              </div>
+            ))}
+          </div>
         </section>
 
         <Footer />
