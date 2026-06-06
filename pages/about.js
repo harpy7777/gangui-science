@@ -110,7 +110,7 @@ export default function About() {
                 ),
                 sub: 'STEP 01',
                 title: '개별 학습 데이터 관리',
-                desc: '문제 풀이 및 학습 데이터를 기반으로\n학생별 취약 단원을 정밀 분석·관리합니다.'
+                desc: '문제 풀이 및 학습 데이터를 기반으로\n학생별 취약 단원을\n정밀 분석·관리합니다.'
               },
               {
                 icon: (
@@ -120,7 +120,7 @@ export default function About() {
                 ),
                 sub: 'STEP 02',
                 title: '반복 학습',
-                desc: '출결부터 취약 단원까지\n한눈에 보이는 자동화 리포트로 제공합니다.'
+                desc: '출결부터 취약 단원까지\n한눈에 보이는 자동화 리포트로\n제공합니다.'
               },
               {
                 icon: (
@@ -130,7 +130,7 @@ export default function About() {
                 ),
                 sub: 'STEP 03',
                 title: '맞춤 문제 자동 구성',
-                desc: '학교별 출제 경향과 학생 맞춤형 난이도를 반영하여\n취약 유형과 오답을 집중 훈련합니다.'
+                desc: '학교별 출제 경향과\n학생 맞춤형 난이도를 반영하여\n취약 유형과 오답을 집중 훈련합니다.'
               },
               {
                 icon: (
@@ -140,7 +140,7 @@ export default function About() {
                 ),
                 sub: 'STEP 04',
                 title: '수행·탐구 관리',
-                desc: '학종 대비를 위해 수행평가와 탐구 활동을\n과정 중심으로 체계적으로 관리합니다.'
+                desc: '학종 대비를 위해\n수행평가와 탐구 활동을\n과정 중심으로 체계적으로 관리합니다.'
               },
               {
                 icon: (
