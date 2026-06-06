@@ -176,13 +176,14 @@ export default function About() {
           <div style={{ maxWidth: '900px', margin: '8rem auto 0', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
 
             {/* 01 */}
-            <div className="card" style={{ padding: '2.4rem 2.6rem', textAlign: 'right' }}>
+            <div className="card" style={{ padding: '2.4rem 2.6rem', textAlign: 'center' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', marginBottom: '1rem' }}>
                 <div style={{ flex: 1, height: '1px', background: '#e5e5e5' }} />
                 <span style={{ fontSize: '0.78rem', fontWeight: 600, color: '#9E9E9E', letterSpacing: '0.12em' }}>WHAT WE DO</span>
                 <div style={{ width: '32px', height: '1px', background: '#e5e5e5' }} />
                 <span style={{ width: '34px', height: '34px', borderRadius: '50%', border: '1px solid #9E9E9E', color: '#9E9E9E', fontSize: '0.85rem', fontWeight: 700, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>01</span>
                 <div style={{ width: '32px', height: '1px', background: '#e5e5e5' }} />
+                <div style={{ flex: 1, height: '1px', background: '#e5e5e5' }} />
               </div>
               <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: '#222222', lineHeight: 1.6, marginBottom: '0.9rem' }}>
                 과학을 잘 가르치는 곳을 넘어, 데이터로 관리하는 학원입니다.
@@ -194,13 +195,14 @@ export default function About() {
             </div>
 
             {/* 02 */}
-            <div className="card" style={{ padding: '2.4rem 2.6rem', textAlign: 'right' }}>
+            <div className="card" style={{ padding: '2.4rem 2.6rem', textAlign: 'center' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', marginBottom: '1rem' }}>
                 <div style={{ flex: 1, height: '1px', background: '#e5e5e5' }} />
                 <span style={{ fontSize: '0.78rem', fontWeight: 600, color: '#9E9E9E', letterSpacing: '0.12em' }}>WHY IT MATTERS</span>
                 <div style={{ width: '32px', height: '1px', background: '#e5e5e5' }} />
                 <span style={{ width: '34px', height: '34px', borderRadius: '50%', border: '1px solid #9E9E9E', color: '#9E9E9E', fontSize: '0.85rem', fontWeight: 700, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>02</span>
                 <div style={{ width: '32px', height: '1px', background: '#e5e5e5' }} />
+                <div style={{ flex: 1, height: '1px', background: '#e5e5e5' }} />
               </div>
               <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: '#222222', lineHeight: 1.6, marginBottom: '0.9rem' }}>
                 자동화의 진짜 목적은 수업 집중입니다.
@@ -212,13 +214,14 @@ export default function About() {
             </div>
 
             {/* 03 */}
-            <div className="card" style={{ padding: '2.4rem 2.6rem', textAlign: 'right' }}>
+            <div className="card" style={{ padding: '2.4rem 2.6rem', textAlign: 'center' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', marginBottom: '1rem' }}>
                 <div style={{ flex: 1, height: '1px', background: '#e5e5e5' }} />
                 <span style={{ fontSize: '0.78rem', fontWeight: 600, color: '#9E9E9E', letterSpacing: '0.12em' }}>OUR POSITION</span>
                 <div style={{ width: '32px', height: '1px', background: '#e5e5e5' }} />
                 <span style={{ width: '34px', height: '34px', borderRadius: '50%', border: '1px solid #9E9E9E', color: '#9E9E9E', fontSize: '0.85rem', fontWeight: 700, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>03</span>
                 <div style={{ width: '32px', height: '1px', background: '#e5e5e5' }} />
+                <div style={{ flex: 1, height: '1px', background: '#e5e5e5' }} />
               </div>
               <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: '#222222', lineHeight: 1.6, marginBottom: '0.9rem' }}>
                 과학 + 데이터 관리 + 입시 전략 + 개별 추적
